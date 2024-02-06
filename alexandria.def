@@ -18,7 +18,7 @@ From: ubuntu:22.04
 
   apt-get update && apt-get -y dist-upgrade && \
   apt-get install -y build-essential cmake git wget \
-          libopenmpi-dev openmpi-bin libeigen3-dev swig libxml2 sqlite3 libfftw3-dev libxml2-dev 
+          libopenmpi-dev openmpi-bin libeigen3-dev swig libxml2 sqlite3 libsqlite3-dev libfftw3-dev libxml2-dev 
 
 
   # openbabel-alexandria
@@ -38,6 +38,10 @@ From: ubuntu:22.04
   cd ACT-0.97
   mkdir build && cd build
   cmake -DGMX_DOUBLE=ON -DCMAKE_C_COMPILER=/usr/bin/mpicc.openmpi -DCMAKE_CXX_COMPILER=/usr/bin/mpicxx.openmpi -DGMX_EXTERNAL_BLAS=OFF -DGMX_EXTERNAL_LAPACK=OFF -DGMX_X11=OFF -DBUILD_SHARED_LIBS=OFF -DGMX_OPENMP=OFF -DGMX_MPI=ON  -DCMAKE_BUILD_TYPE=Release -DGMX_BUILD_MANUAL=OFF -DGMX_COMPACT_DOXYGEN=OFF -DREGRESSIONTEST_DOWNLOAD=OFF -DGMX_DEFAULT_SUFFIX=OFF ..
+  # Running test as root
+  export OMPI_ALLOW_RUN_AS_ROOT=1
+  export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+
   make -j 8 && make -j 8 tests && make test || true
   make install
 
