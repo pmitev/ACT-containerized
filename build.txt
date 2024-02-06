@@ -1,5 +1,5 @@
 Build target 'alexandria.sif' already exists and will be deleted during the build process. Do you want to continue? [y/N] INFO:    Starting build...
-2024/02/06 14:55:00  info unpack layer: sha256:57c139bbda7eb92a286d974aa8fef81acf1a8cbc742242619252c13b196ab499
+2024/02/06 20:56:35  info unpack layer: sha256:57c139bbda7eb92a286d974aa8fef81acf1a8cbc742242619252c13b196ab499
 INFO:    Copying ACT-0.97.tar.xz to /
 INFO:    Running post scriptlet
 + export LC_ALL=C
@@ -10,23 +10,23 @@ INFO:    Running post scriptlet
 + apt-get update
 Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
 Get:2 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
-Get:3 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1399 kB]
-Get:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
-Get:5 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
-Get:6 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
-Get:7 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1685 kB]
-Get:8 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [44.6 kB]
-Get:9 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1064 kB]
-Get:10 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
-Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
-Get:12 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
-Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [50.4 kB]
-Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1334 kB]
-Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1728 kB]
-Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1680 kB]
-Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [50.4 kB]
-Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [28.1 kB]
-Fetched 29.4 MB in 4s (7570 kB/s)
+Get:3 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1691 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [44.6 kB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1401 kB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1064 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1728 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1680 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [50.4 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1334 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [28.1 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [50.4 kB]
+Fetched 29.4 MB in 4s (8281 kB/s)
 Reading package lists...
 + apt-get -y dist-upgrade
 Reading package lists...
@@ -38691,11 +38691,11 @@ CMake Deprecation Warning at CMakeLists.txt:14 (cmake_policy):
 -- Generating done
 -- Build files have been written to: /installs/openbabel-openbabel-alexandria-0.9/build
 + make -j 8 install
-[  0%] Generating torlib.h
 [  0%] Generating phmodeldata.h
+[  0%] Generating bondtyp.h
 [  0%] Generating atomtyp.h
 [  0%] Generating resdata.h
-[  0%] Generating bondtyp.h
+[  0%] Generating torlib.h
 [  0%] Generating types.h
 [  1%] Generating atomizationenergies.h
 [  2%] Building C object src/formats/libinchi/CMakeFiles/inchi.dir/ichi_bns.c.o
@@ -38720,8 +38720,8 @@ CMake Deprecation Warning at CMakeLists.txt:14 (cmake_policy):
 [  6%] Building C object src/formats/libinchi/CMakeFiles/inchi.dir/ichiqueu.c.o
 [  6%] Building C object src/formats/libinchi/CMakeFiles/inchi.dir/ichiread.c.o
 [  6%] Building C object src/formats/libinchi/CMakeFiles/inchi.dir/ichiring.c.o
-[  6%] Building C object src/formats/libinchi/CMakeFiles/inchi.dir/ichirvr1.c.o
 [  6%] Building C object src/formats/libinchi/CMakeFiles/inchi.dir/ichirvr2.c.o
+[  6%] Building C object src/formats/libinchi/CMakeFiles/inchi.dir/ichirvr1.c.o
 [  7%] Building C object src/formats/libinchi/CMakeFiles/inchi.dir/ichirvr3.c.o
 [  7%] Built target data_headers
 [  7%] Building C object src/formats/libinchi/CMakeFiles/inchi.dir/ichirvr4.c.o
@@ -38750,10 +38750,10 @@ CMake Deprecation Warning at CMakeLists.txt:14 (cmake_policy):
 [ 11%] Building CXX object src/CMakeFiles/openbabel.dir/builder.cpp.o
 [ 11%] Building CXX object src/CMakeFiles/openbabel.dir/canon.cpp.o
 [ 11%] Building CXX object src/CMakeFiles/openbabel.dir/chains.cpp.o
-[ 11%] Building CXX object src/CMakeFiles/openbabel.dir/chargemodel.cpp.o
 [ 11%] Linking C shared library ../../../lib/libinchi.so
+[ 11%] Building CXX object src/CMakeFiles/openbabel.dir/chargemodel.cpp.o
+[ 11%] Built target inchi
 [ 12%] Building CXX object src/CMakeFiles/openbabel.dir/data.cpp.o
-[ 12%] Built target inchi
 [ 12%] Building CXX object src/CMakeFiles/openbabel.dir/data_utilities.cpp.o
 [ 12%] Building CXX object src/CMakeFiles/openbabel.dir/descriptor.cpp.o
 [ 12%] Building CXX object src/CMakeFiles/openbabel.dir/elements.cpp.o
@@ -38803,12 +38803,12 @@ CMake Deprecation Warning at CMakeLists.txt:14 (cmake_policy):
 [ 20%] Building CXX object src/CMakeFiles/openbabel.dir/depict/svgpainter.cpp.o
 [ 21%] Building CXX object src/CMakeFiles/openbabel.dir/math/matrix3x3.cpp.o
 [ 21%] Building CXX object src/CMakeFiles/openbabel.dir/math/spacegroup.cpp.o
-[ 21%] Building CXX object src/CMakeFiles/openbabel.dir/math/transform3d.cpp.o
 In static member function 'static void OpenBabel::matrix3x3::jacobi(unsigned int, double*, double*, double*)':
 cc1plus: warning: iteration 2147483647 invokes undefined behavior [-Waggressive-loop-optimizations]
 /installs/openbabel-openbabel-alexandria-0.9/src/math/matrix3x3.cpp:650:19: note: within this loop
   650 |     for (j = 0; j < static_cast<int>(n)-1; j++)
       |                 ~~^~~~~~~~~~~~~~~~~~~~~~~
+[ 21%] Building CXX object src/CMakeFiles/openbabel.dir/math/transform3d.cpp.o
 [ 21%] Building CXX object src/CMakeFiles/openbabel.dir/math/vector3.cpp.o
 [ 21%] Building CXX object src/CMakeFiles/openbabel.dir/math/align.cpp.o
 [ 22%] Building CXX object src/CMakeFiles/openbabel.dir/stereo/stereo.cpp.o
@@ -38852,14 +38852,14 @@ In file included from /usr/include/c++/11/bits/stl_function.h:1421,
       |           ^~~~~~~~~
 [ 23%] Linking CXX shared library ../lib/libopenbabel.so
 [ 23%] Built target openbabel
-[ 23%] Building CXX object src/CMakeFiles/plugin_fingerprints.dir/fingerprints/finger2.cpp.o
-[ 23%] Building CXX object src/CMakeFiles/plugin_descriptors.dir/descriptors/cansmidescriptor.cpp.o
-[ 23%] Building CXX object src/CMakeFiles/plugin_forcefields.dir/forcefields/forcefieldalexandria.cpp.o
-[ 23%] Building CXX object src/formats/CMakeFiles/smilesformat.dir/smilesformat.cpp.o
-[ 23%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/addfilename.cpp.o
-[ 23%] Building CXX object src/formats/CMakeFiles/mdlformat.dir/mdlformat.cpp.o
-[ 23%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/eem.cpp.o
 [ 24%] Building CXX object src/formats/CMakeFiles/mol2format.dir/mol2format.cpp.o
+[ 24%] Building CXX object src/formats/CMakeFiles/mdlformat.dir/mdlformat.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/plugin_fingerprints.dir/fingerprints/finger2.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/plugin_descriptors.dir/descriptors/cansmidescriptor.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/addfilename.cpp.o
+[ 24%] Building CXX object src/formats/CMakeFiles/smilesformat.dir/smilesformat.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/eem.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/plugin_forcefields.dir/forcefields/forcefieldalexandria.cpp.o
 [ 24%] Building CXX object src/CMakeFiles/plugin_descriptors.dir/descriptors/cmpdfilter.cpp.o
 [ 24%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/addinindex.cpp.o
 [ 24%] Building CXX object src/CMakeFiles/plugin_forcefields.dir/forcefields/forcefieldgaff.cpp.o
@@ -38869,9 +38869,10 @@ In file included from /usr/include/c++/11/bits/stl_function.h:1421,
 [ 24%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/addpolarh.cpp.o
 [ 24%] Linking CXX shared module ../../lib/mol2format.so
 [ 25%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/none.cpp.o
-[ 25%] Built target mol2format
-[ 25%] Building CXX object src/formats/CMakeFiles/pdbformat.dir/pdbformat.cpp.o
 [ 26%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/addnonpolarh.cpp.o
+[ 26%] Built target mol2format
+[ 26%] Building CXX object src/formats/CMakeFiles/pdbformat.dir/pdbformat.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/plugin_descriptors.dir/descriptors/filters.cpp.o
 /installs/openbabel-openbabel-alexandria-0.9/src/formats/mdlformat.cpp: In member function 'std::string OpenBabel::MDLFormat::GetTimeDate()':
 /installs/openbabel-openbabel-alexandria-0.9/src/formats/mdlformat.cpp:1709:27: warning: '%02d' directive output may be truncated writing between 2 and 11 bytes into a region of size between 0 and 9 [-Wformat-truncation=]
  1709 |     snprintf(td, 11, "%02d%02d%02d%02d%02d", ts->tm_mon+1, ts->tm_mday,
@@ -38895,7 +38896,6 @@ In file included from /usr/include/stdio.h:894,
       |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    73 |                                    __va_arg_pack ());
       |                                    ~~~~~~~~~~~~~~~~~
-[ 26%] Building CXX object src/CMakeFiles/plugin_descriptors.dir/descriptors/filters.cpp.o
 [ 26%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/canonical.cpp.o
 [ 27%] Building CXX object src/CMakeFiles/plugin_fingerprints.dir/fingerprints/fingerecfp.cpp.o
 [ 27%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/mmff94.cpp.o
@@ -38974,12 +38974,11 @@ In file included from /usr/include/stdio.h:894,
    73 |                                    __va_arg_pack ());
       |                                    ~~~~~~~~~~~~~~~~~
 [ 28%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/changecell.cpp.o
-[ 28%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/fromfile.cpp.o
 [ 28%] Linking CXX shared module ../lib/plugin_fingerprints.so
+[ 28%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/fromfile.cpp.o
 [ 28%] Built target plugin_fingerprints
 [ 28%] Building CXX object src/formats/CMakeFiles/inchiformat.dir/inchiformat.cpp.o
 [ 28%] Building CXX object src/CMakeFiles/plugin_descriptors.dir/descriptors/smartsdescriptors.cpp.o
-[ 29%] Linking CXX shared module ../../lib/pdbformat.so
 /installs/openbabel-openbabel-alexandria-0.9/src/formats/smilesformat.cpp: In member function 'bool OpenBabel::OBMol2Cansmi::GetSmilesElement(OpenBabel::OBCanSmiNode*, std::vector<OpenBabel::OBAtom*>&, std::vector<unsigned int>&, std::string&)':
 /installs/openbabel-openbabel-alexandria-0.9/src/formats/smilesformat.cpp:2865:35: warning: '__builtin___snprintf_chk' output may be truncated before the last format character [-Wformat-truncation=]
  2865 |           snprintf(tcount, 10, "%d", hcount);
@@ -39027,170 +39026,171 @@ In file included from /usr/include/stdio.h:894,
       |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    73 |                                    __va_arg_pack ());
       |                                    ~~~~~~~~~~~~~~~~~
+[ 29%] Linking CXX shared module ../../lib/pdbformat.so
 [ 29%] Built target pdbformat
 [ 29%] Building CXX object src/formats/CMakeFiles/asciiformat.dir/asciiformat.cpp.o
 [ 29%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/delpolarh.cpp.o
+[ 29%] Linking CXX shared module ../lib/plugin_descriptors.so
 [ 30%] Linking CXX shared module ../../lib/mdlformat.so
-[ 30%] Linking CXX shared module ../lib/plugin_descriptors.so
-[ 30%] Built target mdlformat
-[ 30%] Building CXX object src/formats/CMakeFiles/copyformat.dir/copyformat.cpp.o
 [ 30%] Built target plugin_descriptors
-[ 30%] Building CXX object src/formats/CMakeFiles/MNAformat.dir/MNAformat.cpp.o
+[ 30%] Building CXX object src/formats/CMakeFiles/copyformat.dir/copyformat.cpp.o
 [ 30%] Building CXX object src/CMakeFiles/plugin_forcefields.dir/forcefields/forcefieldghemical.cpp.o
-[ 30%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/delnonpolarh.cpp.o
-[ 30%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/eqeq.cpp.o
-[ 30%] Building CXX object src/formats/CMakeFiles/asciiformat.dir/__/depict/asciipainter.cpp.o
-[ 30%] Linking CXX shared module ../../lib/copyformat.so
-[ 30%] Built target copyformat
-[ 30%] Building CXX object src/formats/CMakeFiles/molreport.dir/molreport.cpp.o
-[ 31%] Linking CXX shared module ../../lib/smilesformat.so
-[ 31%] Built target smilesformat
-[ 32%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/gen2D.cpp.o
-[ 32%] Building CXX object src/formats/CMakeFiles/nulformat.dir/nulformat.cpp.o
-[ 33%] Linking CXX shared module ../../lib/asciiformat.so
-[ 33%] Built target asciiformat
-[ 34%] Building CXX object src/formats/CMakeFiles/painterformat.dir/painterformat.cpp.o
-[ 34%] Linking CXX shared module ../../lib/MNAformat.so
-[ 34%] Built target MNAformat
-[ 34%] Building CXX object src/formats/CMakeFiles/painterformat.dir/__/depict/commandpainter.cpp.o
+[ 30%] Built target mdlformat
+[ 31%] Building CXX object src/CMakeFiles/plugin_forcefields.dir/forcefields/forcefieldmmff94.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/delnonpolarh.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/eqeq.cpp.o
+[ 31%] Building CXX object src/formats/CMakeFiles/asciiformat.dir/__/depict/asciipainter.cpp.o
+[ 32%] Linking CXX shared module ../../lib/smilesformat.so
+[ 32%] Linking CXX shared module ../../lib/copyformat.so
+[ 32%] Built target smilesformat
+[ 32%] Built target copyformat
+[ 32%] Building CXX object src/formats/CMakeFiles/MNAformat.dir/MNAformat.cpp.o
+[ 32%] Building CXX object src/formats/CMakeFiles/molreport.dir/molreport.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/gen2D.cpp.o
+[ 34%] Linking CXX shared module ../../lib/asciiformat.so
+[ 34%] Built target asciiformat
 [ 34%] Building CXX object src/formats/CMakeFiles/inchiformat.dir/getinchi.cpp.o
-[ 34%] Linking CXX shared module ../../lib/nulformat.so
+[ 34%] Building CXX object src/formats/CMakeFiles/nulformat.dir/nulformat.cpp.o
 [ 34%] Linking CXX shared module ../../lib/molreport.so
-[ 34%] Built target nulformat
 [ 34%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/fillUC.cpp.o
 [ 34%] Built target molreport
-[ 34%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/forcefield.cpp.o
-[ 34%] Building CXX object src/formats/CMakeFiles/povrayformat.dir/povrayformat.cpp.o
-[ 35%] Building CXX object src/formats/CMakeFiles/inchiformat.dir/__/ops/unique.cpp.o
-[ 36%] Building CXX object src/CMakeFiles/plugin_forcefields.dir/forcefields/forcefieldmmff94.cpp.o
-[ 36%] Linking CXX shared module ../../lib/painterformat.so
-[ 36%] Built target painterformat
+[ 35%] Building CXX object src/formats/CMakeFiles/painterformat.dir/painterformat.cpp.o
+[ 36%] Building CXX object src/formats/CMakeFiles/inchiformat.dir/__/ops/unique.cpp.o
+[ 36%] Linking CXX shared module ../../lib/nulformat.so
+[ 36%] Linking CXX shared module ../../lib/MNAformat.so
+[ 36%] Built target nulformat
+[ 36%] Building CXX object src/formats/CMakeFiles/povrayformat.dir/povrayformat.cpp.o
+[ 36%] Built target MNAformat
 [ 36%] Building CXX object src/formats/CMakeFiles/reportformat.dir/reportformat.cpp.o
+[ 36%] Building CXX object src/formats/CMakeFiles/painterformat.dir/__/depict/commandpainter.cpp.o
 [ 36%] Linking CXX shared module ../../lib/inchiformat.so
-[ 36%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/gen3d.cpp.o
 [ 36%] Built target inchiformat
 [ 36%] Building CXX object src/formats/CMakeFiles/svgformat.dir/svgformat.cpp.o
-[ 36%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/largest.cpp.o
-[ 36%] Linking CXX shared module ../../lib/povrayformat.so
+[ 36%] Linking CXX shared module ../../lib/painterformat.so
+[ 36%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/forcefield.cpp.o
+[ 36%] Built target painterformat
+[ 36%] Building CXX object src/formats/CMakeFiles/textformat.dir/textformat.cpp.o
 [ 36%] Linking CXX shared module ../../lib/reportformat.so
+[ 36%] Built target reportformat
+[ 36%] Building CXX object src/formats/CMakeFiles/titleformat.dir/titleformat.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/plugin_forcefields.dir/forcefields/forcefielduff.cpp.o
+[ 36%] Linking CXX shared module ../../lib/povrayformat.so
+[ 36%] Linking CXX shared module ../../lib/textformat.so
 [ 36%] Built target povrayformat
-[ 37%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/loader.cpp.o
-[ 37%] Built target reportformat
-[ 37%] Building CXX object src/formats/CMakeFiles/textformat.dir/textformat.cpp.o
-[ 37%] Building CXX object src/CMakeFiles/plugin_forcefields.dir/forcefields/forcefielduff.cpp.o
-[ 37%] Linking CXX shared module ../../lib/textformat.so
-[ 37%] Built target textformat
-[ 37%] Building CXX object src/formats/CMakeFiles/titleformat.dir/titleformat.cpp.o
-[ 37%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/neutralize.cpp.o
-[ 37%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/opsplit.cpp.o
-[ 37%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/optransform.cpp.o
-[ 38%] Linking CXX shared module ../../lib/svgformat.so
-[ 38%] Built target svgformat
-[ 38%] Building CXX object src/formats/CMakeFiles/confabreport.dir/confabreport.cpp.o
-[ 38%] Linking CXX shared module ../../lib/titleformat.so
-[ 38%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/partialcharges.cpp.o
-[ 38%] Built target titleformat
-[ 38%] Building CXX object src/formats/CMakeFiles/pngformat.dir/pngformat.cpp.o
-[ 38%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/readconformers.cpp.o
-[ 39%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/sort.cpp.o
-[ 39%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/opisomorph.cpp.o
-[ 39%] Linking CXX shared module ../../lib/pngformat.so
-[ 39%] Built target pngformat
-[ 39%] Building CXX object src/formats/CMakeFiles/acesformat.dir/acesformat.cpp.o
+[ 36%] Building CXX object src/formats/CMakeFiles/confabreport.dir/confabreport.cpp.o
+[ 36%] Built target textformat
+[ 36%] Building CXX object src/formats/CMakeFiles/pngformat.dir/pngformat.cpp.o
+[ 36%] Linking CXX shared module ../../lib/titleformat.so
+[ 36%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/gen3d.cpp.o
+[ 36%] Built target titleformat
+[ 36%] Building CXX object src/formats/CMakeFiles/acesformat.dir/acesformat.cpp.o
+[ 37%] Linking CXX shared module ../../lib/svgformat.so
+[ 37%] Built target svgformat
+[ 38%] Building CXX object src/formats/CMakeFiles/abinitformat.dir/abinitformat.cpp.o
+[ 38%] Linking CXX shared module ../../lib/pngformat.so
+[ 38%] Built target pngformat
+[ 39%] Building CXX object src/formats/CMakeFiles/adfformat.dir/adfformat.cpp.o
 [ 40%] Linking CXX shared module ../../lib/confabreport.so
-[ 40%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/ophighlight.cpp.o
 [ 40%] Built target confabreport
-[ 41%] Building CXX object src/formats/CMakeFiles/abinitformat.dir/abinitformat.cpp.o
-[ 41%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/xout.cpp.o
-[ 41%] Linking CXX shared module ../../lib/acesformat.so
-[ 41%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/conformer.cpp.o
-[ 42%] Building CXX object src/formats/CMakeFiles/adfformat.dir/adfformat.cpp.o
-[ 43%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/opalign.cpp.o
-[ 43%] Built target acesformat
-[ 43%] Linking CXX shared module ../../lib/abinitformat.so
-[ 43%] Building CXX object src/formats/CMakeFiles/aoforceformat.dir/aoforceformat.cpp.o
-[ 43%] Built target abinitformat
-[ 43%] Building CXX object src/formats/CMakeFiles/castepformat.dir/castepformat.cpp.o
-[ 43%] Linking CXX shared module ../lib/plugin_forcefields.so
-[ 43%] Built target plugin_forcefields
-[ 44%] Building CXX object src/formats/CMakeFiles/crystal09format.dir/crystal09format.cpp.o
-[ 44%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/opconfab.cpp.o
+[ 40%] Building CXX object src/formats/CMakeFiles/aoforceformat.dir/aoforceformat.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/largest.cpp.o
+[ 40%] Linking CXX shared module ../../lib/acesformat.so
+[ 40%] Linking CXX shared module ../../lib/abinitformat.so
+[ 40%] Built target acesformat
+[ 40%] Built target abinitformat
+[ 40%] Building CXX object src/formats/CMakeFiles/castepformat.dir/castepformat.cpp.o
+[ 41%] Building CXX object src/formats/CMakeFiles/crystal09format.dir/crystal09format.cpp.o
+[ 41%] Building CXX object src/formats/CMakeFiles/daltonformat.dir/daltonformat.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/loader.cpp.o
+[ 42%] Linking CXX shared module ../../lib/aoforceformat.so
+[ 42%] Linking CXX shared module ../../lib/castepformat.so
+[ 42%] Linking CXX shared module ../../lib/daltonformat.so
+[ 42%] Built target aoforceformat
+[ 42%] Building CXX object src/formats/CMakeFiles/dmolformat.dir/dmolformat.cpp.o
+[ 42%] Linking CXX shared module ../../lib/adfformat.so
+[ 42%] Built target castepformat
+[ 42%] Built target daltonformat
+[ 42%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/neutralize.cpp.o
+[ 42%] Building CXX object src/formats/CMakeFiles/fchkformat.dir/fchkformat.cpp.o
+[ 42%] Built target adfformat
+[ 42%] Building CXX object src/formats/CMakeFiles/fhiaimsformat.dir/fhiaimsformat.cpp.o
+[ 42%] Linking CXX shared module ../../lib/crystal09format.so
+[ 42%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/opsplit.cpp.o
+[ 42%] Built target crystal09format
+[ 42%] Building CXX object src/formats/CMakeFiles/gamessformat.dir/gamessformat.cpp.o
+[ 42%] Linking CXX shared module ../lib/plugin_forcefields.so
+[ 42%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/optransform.cpp.o
+[ 42%] Built target plugin_forcefields
+[ 42%] Building CXX object src/formats/CMakeFiles/gaussformat.dir/gaussformat.cpp.o
+[ 42%] Linking CXX shared module ../../lib/dmolformat.so
+[ 42%] Built target dmolformat
+[ 43%] Building CXX object src/formats/CMakeFiles/gausscubeformat.dir/gausscubeformat.cpp.o
+[ 44%] Linking CXX shared module ../../lib/fhiaimsformat.so
 [ 44%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/qeq.cpp.o
-[ 44%] Linking CXX shared module ../../lib/castepformat.so
-[ 45%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/qtpie.cpp.o
-[ 45%] Built target castepformat
-[ 45%] Building CXX object src/formats/CMakeFiles/daltonformat.dir/daltonformat.cpp.o
-[ 45%] Linking CXX shared module ../../lib/aoforceformat.so
-[ 45%] Built target aoforceformat
-[ 45%] Building CXX object src/formats/CMakeFiles/dmolformat.dir/dmolformat.cpp.o
-[ 45%] Building CXX object src/formats/CMakeFiles/fchkformat.dir/fchkformat.cpp.o
-[ 45%] Linking CXX shared module ../lib/plugin_ops.so
-[ 45%] Built target plugin_ops
-[ 45%] Building CXX object src/formats/CMakeFiles/fhiaimsformat.dir/fhiaimsformat.cpp.o
-[ 45%] Linking CXX shared module ../../lib/adfformat.so
-[ 45%] Linking CXX shared module ../../lib/crystal09format.so
-[ 45%] Built target adfformat
-[ 45%] Building CXX object src/formats/CMakeFiles/gamessformat.dir/gamessformat.cpp.o
-[ 45%] Built target crystal09format
-[ 45%] Building CXX object src/formats/CMakeFiles/gaussformat.dir/gaussformat.cpp.o
-[ 45%] Linking CXX shared module ../../lib/daltonformat.so
-[ 45%] Built target daltonformat
-[ 46%] Building CXX object src/formats/CMakeFiles/gausscubeformat.dir/gausscubeformat.cpp.o
-[ 46%] Linking CXX shared module ../../lib/dmolformat.so
-[ 46%] Built target dmolformat
-[ 46%] Building CXX object src/formats/CMakeFiles/gausszmatformat.dir/gausszmatformat.cpp.o
-[ 47%] Linking CXX shared module ../../lib/fhiaimsformat.so
-[ 47%] Built target fhiaimsformat
-[ 47%] Building CXX object src/formats/CMakeFiles/gulpformat.dir/gulpformat.cpp.o
-[ 47%] Linking CXX shared module ../../lib/fchkformat.so
-[ 47%] Built target fchkformat
-[ 47%] Building CXX object src/formats/CMakeFiles/hinformat.dir/hinformat.cpp.o
-[ 47%] Linking CXX shared module ../../lib/gausszmatformat.so
-[ 47%] Built target gausszmatformat
-[ 47%] Building CXX object src/formats/CMakeFiles/jaguarformat.dir/jaguarformat.cpp.o
-[ 47%] Linking CXX shared module ../../lib/gulpformat.so
-[ 47%] Built target gulpformat
-[ 47%] Linking CXX shared module ../../lib/gausscubeformat.so
-[ 47%] Building CXX object src/formats/CMakeFiles/molproformat.dir/molproformat.cpp.o
-[ 47%] Linking CXX shared module ../../lib/hinformat.so
-[ 47%] Built target gausscubeformat
-[ 47%] Building CXX object src/formats/CMakeFiles/mopacformat.dir/mopacformat.cpp.o
-[ 47%] Built target hinformat
-[ 47%] Building CXX object src/formats/CMakeFiles/nwchemformat.dir/nwchemformat.cpp.o
-[ 47%] Linking CXX shared module ../../lib/jaguarformat.so
-[ 47%] Linking CXX shared module ../../lib/gamessformat.so
-[ 47%] Built target jaguarformat
-[ 47%] Building CXX object src/formats/CMakeFiles/pwscfformat.dir/pwscfformat.cpp.o
-[ 47%] Built target gamessformat
-[ 47%] Building CXX object src/formats/CMakeFiles/qchemformat.dir/qchemformat.cpp.o
-[ 48%] Linking CXX shared module ../../lib/molproformat.so
-[ 48%] Built target molproformat
-[ 48%] Building CXX object src/formats/CMakeFiles/siestaformat.dir/siestaformat.cpp.o
-[ 48%] Linking CXX shared module ../../lib/pwscfformat.so
-[ 48%] Linking CXX shared module ../../lib/gaussformat.so
-[ 48%] Built target pwscfformat
-[ 48%] Built target gaussformat
-[ 48%] Building CXX object src/formats/CMakeFiles/turbomoleformat.dir/turbomoleformat.cpp.o
-[ 48%] Linking CXX shared module ../../lib/mopacformat.so
-[ 48%] Building CXX object src/formats/CMakeFiles/vaspformat.dir/vaspformat.cpp.o
-[ 48%] Built target mopacformat
+[ 44%] Built target fhiaimsformat
+[ 44%] Building CXX object src/formats/CMakeFiles/gausszmatformat.dir/gausszmatformat.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/partialcharges.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/readconformers.cpp.o
+[ 44%] Linking CXX shared module ../../lib/fchkformat.so
+[ 44%] Built target fchkformat
+[ 44%] Building CXX object src/formats/CMakeFiles/gulpformat.dir/gulpformat.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/sort.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/opisomorph.cpp.o
+[ 45%] Linking CXX shared module ../../lib/gausszmatformat.so
+[ 45%] Built target gausszmatformat
+[ 45%] Building CXX object src/formats/CMakeFiles/hinformat.dir/hinformat.cpp.o
+[ 45%] Linking CXX shared module ../../lib/gausscubeformat.so
+[ 45%] Built target gausscubeformat
+[ 45%] Building CXX object src/formats/CMakeFiles/jaguarformat.dir/jaguarformat.cpp.o
+[ 45%] Linking CXX shared module ../../lib/gulpformat.so
+[ 45%] Built target gulpformat
+[ 45%] Building CXX object src/formats/CMakeFiles/molproformat.dir/molproformat.cpp.o
+[ 45%] Linking CXX shared module ../../lib/hinformat.so
+[ 45%] Built target hinformat
+[ 45%] Building CXX object src/formats/CMakeFiles/mopacformat.dir/mopacformat.cpp.o
+[ 45%] Linking CXX shared module ../../lib/gamessformat.so
+[ 45%] Built target gamessformat
+[ 45%] Building CXX object src/formats/CMakeFiles/nwchemformat.dir/nwchemformat.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/ophighlight.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/xout.cpp.o
+[ 45%] Linking CXX shared module ../../lib/jaguarformat.so
+[ 45%] Built target jaguarformat
+[ 45%] Building CXX object src/formats/CMakeFiles/pwscfformat.dir/pwscfformat.cpp.o
+[ 46%] Linking CXX shared module ../../lib/molproformat.so
+[ 46%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/conformer.cpp.o
+[ 46%] Built target molproformat
+[ 46%] Building CXX object src/formats/CMakeFiles/qchemformat.dir/qchemformat.cpp.o
+[ 46%] Linking CXX shared module ../../lib/gaussformat.so
+[ 47%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/opalign.cpp.o
+[ 47%] Built target gaussformat
+[ 47%] Building CXX object src/formats/CMakeFiles/siestaformat.dir/siestaformat.cpp.o
+[ 47%] Linking CXX shared module ../../lib/pwscfformat.so
+[ 47%] Built target pwscfformat
+[ 47%] Building CXX object src/formats/CMakeFiles/turbomoleformat.dir/turbomoleformat.cpp.o
+[ 47%] Linking CXX shared module ../../lib/mopacformat.so
+[ 47%] Built target mopacformat
+[ 47%] Building CXX object src/formats/CMakeFiles/vaspformat.dir/vaspformat.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/plugin_ops.dir/ops/opconfab.cpp.o
+[ 48%] Linking CXX shared module ../../lib/nwchemformat.so
+[ 48%] Linking CXX shared module ../../lib/turbomoleformat.so
+[ 48%] Built target nwchemformat
 [ 48%] Building CXX object src/formats/CMakeFiles/xsfformat.dir/xsfformat.cpp.o
-[ 49%] Linking CXX shared module ../../lib/nwchemformat.so
-[ 50%] Linking CXX shared module ../../lib/qchemformat.so
-[ 50%] Built target nwchemformat
-[ 50%] Building CXX object src/formats/CMakeFiles/zindoformat.dir/zindoformat.cpp.o
-[ 50%] Built target qchemformat
-[ 50%] Building CXX object src/formats/CMakeFiles/gamessukformat.dir/gamessukformat.cpp.o
-[ 50%] Linking CXX shared module ../../lib/turbomoleformat.so
-[ 50%] Linking CXX shared module ../../lib/siestaformat.so
-[ 50%] Built target turbomoleformat
-[ 50%] Building CXX object src/formats/CMakeFiles/orcaformat.dir/orcaformat.cpp.o
+[ 48%] Built target turbomoleformat
+[ 48%] Building CXX object src/formats/CMakeFiles/zindoformat.dir/zindoformat.cpp.o
+[ 49%] Linking CXX shared module ../../lib/qchemformat.so
+[ 49%] Built target qchemformat
+[ 49%] Building CXX object src/formats/CMakeFiles/gamessukformat.dir/gamessukformat.cpp.o
+[ 49%] Linking CXX shared module ../../lib/siestaformat.so
+[ 50%] Building CXX object src/CMakeFiles/plugin_charges.dir/charges/qtpie.cpp.o
 [ 50%] Built target siestaformat
-[ 50%] Building CXX object src/formats/CMakeFiles/APIInterface.dir/APIInterface.cpp.o
+[ 50%] Building CXX object src/formats/CMakeFiles/orcaformat.dir/orcaformat.cpp.o
 [ 51%] Linking CXX shared module ../../lib/zindoformat.so
-[ 51%] Linking CXX shared module ../../lib/xsfformat.so
+[ 51%] Linking CXX shared module ../lib/plugin_ops.so
 [ 51%] Built target zindoformat
+[ 51%] Building CXX object src/formats/CMakeFiles/APIInterface.dir/APIInterface.cpp.o
+[ 51%] Built target plugin_ops
 [ 51%] Building CXX object src/formats/CMakeFiles/CSRformat.dir/CSRformat.cpp.o
+[ 51%] Linking CXX shared module ../../lib/xsfformat.so
 [ 51%] Built target xsfformat
 [ 51%] Building CXX object src/formats/CMakeFiles/PQSformat.dir/PQSformat.cpp.o
 [ 51%] Linking CXX shared module ../../lib/APIInterface.so
@@ -39202,152 +39202,149 @@ In file included from /usr/include/stdio.h:894,
 [ 51%] Linking CXX shared module ../../lib/PQSformat.so
 [ 51%] Built target PQSformat
 [ 51%] Building CXX object src/formats/CMakeFiles/acrformat.dir/acrformat.cpp.o
-[ 51%] Linking CXX shared module ../../lib/alchemyformat.so
 [ 51%] Linking CXX shared module ../../lib/vaspformat.so
-[ 51%] Built target alchemyformat
-[ 51%] Building CXX object src/formats/CMakeFiles/amberformat.dir/amberformat.cpp.o
 [ 51%] Built target vaspformat
-[ 51%] Linking CXX shared module ../../lib/acrformat.so
+[ 51%] Building CXX object src/formats/CMakeFiles/amberformat.dir/amberformat.cpp.o
+[ 51%] Linking CXX shared module ../../lib/alchemyformat.so
+[ 51%] Built target alchemyformat
 [ 51%] Building CXX object src/formats/CMakeFiles/balstformat.dir/balstformat.cpp.o
+[ 51%] Linking CXX shared module ../../lib/acrformat.so
 [ 51%] Built target acrformat
 [ 51%] Building CXX object src/formats/CMakeFiles/bgfformat.dir/bgfformat.cpp.o
 [ 51%] Linking CXX shared module ../../lib/gamessukformat.so
 [ 51%] Built target gamessukformat
 [ 51%] Building CXX object src/formats/CMakeFiles/boxformat.dir/boxformat.cpp.o
+[ 51%] Linking CXX shared module ../../lib/orcaformat.so
 [ 52%] Linking CXX shared module ../../lib/amberformat.so
-[ 52%] Linking CXX shared module ../../lib/orcaformat.so
-[ 52%] Linking CXX shared module ../../lib/balstformat.so
-[ 52%] Built target amberformat
-[ 52%] Building CXX object src/formats/CMakeFiles/cacaoformat.dir/cacaoformat.cpp.o
 [ 52%] Built target orcaformat
+[ 52%] Building CXX object src/formats/CMakeFiles/cacaoformat.dir/cacaoformat.cpp.o
+[ 52%] Built target amberformat
 [ 52%] Building CXX object src/formats/CMakeFiles/cacheformat.dir/cacheformat.cpp.o
+[ 52%] Linking CXX shared module ../../lib/balstformat.so
 [ 52%] Built target balstformat
 [ 53%] Building CXX object src/formats/CMakeFiles/carformat.dir/carformat.cpp.o
 [ 54%] Linking CXX shared module ../../lib/boxformat.so
-[ 54%] Linking CXX shared module ../../lib/bgfformat.so
 [ 54%] Built target boxformat
 [ 54%] Building CXX object src/formats/CMakeFiles/cccformat.dir/cccformat.cpp.o
-[ 54%] Built target bgfformat
-[ 54%] Building CXX object src/formats/CMakeFiles/chem3dformat.dir/chem3dformat.cpp.o
 [ 54%] Linking CXX shared module ../../lib/cacheformat.so
+[ 54%] Linking CXX shared module ../../lib/bgfformat.so
 [ 54%] Built target cacheformat
+[ 54%] Building CXX object src/formats/CMakeFiles/chem3dformat.dir/chem3dformat.cpp.o
+[ 54%] Built target bgfformat
 [ 54%] Building CXX object src/formats/CMakeFiles/chemdrawct.dir/chemdrawct.cpp.o
 [ 54%] Linking CXX shared module ../../lib/cacaoformat.so
+[ 54%] Built target cacaoformat
+[ 54%] Building CXX object src/formats/CMakeFiles/chemtoolformat.dir/chemtoolformat.cpp.o
 [ 54%] Linking CXX shared module ../../lib/carformat.so
 [ 54%] Built target carformat
-[ 54%] Built target cacaoformat
-[ 55%] Building CXX object src/formats/CMakeFiles/chemtoolformat.dir/chemtoolformat.cpp.o
 [ 55%] Building CXX object src/formats/CMakeFiles/cifformat.dir/cifformat.cpp.o
 [ 56%] Linking CXX shared module ../../lib/cccformat.so
 [ 56%] Built target cccformat
 [ 56%] Building CXX object src/formats/CMakeFiles/cofformat.dir/cofformat.cpp.o
-[ 56%] Linking CXX shared module ../../lib/chem3dformat.so
-[ 57%] Linking CXX shared module ../../lib/MCDLformat.so
+[ 57%] Linking CXX shared module ../../lib/chemdrawct.so
+[ 57%] Linking CXX shared module ../../lib/chem3dformat.so
+[ 57%] Built target chemdrawct
 [ 57%] Built target chem3dformat
 [ 57%] Building CXX object src/formats/CMakeFiles/crkformat.dir/crkformat.cpp.o
-[ 57%] Built target MCDLformat
 [ 57%] Building CXX object src/formats/CMakeFiles/cssrformat.dir/cssrformat.cpp.o
-[ 58%] Linking CXX shared module ../../lib/chemdrawct.so
-[ 58%] Built target chemdrawct
-[ 58%] Building CXX object src/formats/CMakeFiles/dlpolyformat.dir/dlpolyformat.cpp.o
+[ 58%] Linking CXX shared module ../../lib/MCDLformat.so
 [ 58%] Linking CXX shared module ../../lib/chemtoolformat.so
+[ 58%] Built target MCDLformat
 [ 58%] Built target chemtoolformat
+[ 58%] Building CXX object src/formats/CMakeFiles/dlpolyformat.dir/dlpolyformat.cpp.o
 [ 58%] Building CXX object src/formats/CMakeFiles/exyzformat.dir/exyzformat.cpp.o
-[ 58%] Linking CXX shared module ../../lib/crkformat.so
 [ 58%] Linking CXX shared module ../../lib/cssrformat.so
+[ 58%] Linking CXX shared module ../../lib/crkformat.so
+[ 58%] Built target cssrformat
 [ 58%] Built target crkformat
 [ 58%] Building CXX object src/formats/CMakeFiles/fastsearchformat.dir/fastsearchformat.cpp.o
-[ 58%] Built target cssrformat
 [ 58%] Building CXX object src/formats/CMakeFiles/fastaformat.dir/fastaformat.cpp.o
+[ 58%] Linking CXX shared module ../../lib/cofformat.so
+[ 58%] Built target cofformat
 [ 59%] Building CXX object src/formats/CMakeFiles/featformat.dir/featformat.cpp.o
-[ 59%] Linking CXX shared module ../../lib/cofformat.so
-[ 59%] Built target cofformat
-[ 59%] Building CXX object src/formats/CMakeFiles/fhformat.dir/fhformat.cpp.o
-[ 59%] Linking CXX shared module ../lib/plugin_charges.so
-[ 59%] Built target plugin_charges
-[ 59%] Building CXX object src/formats/CMakeFiles/fingerprintformat.dir/fingerprintformat.cpp.o
 [ 59%] Linking CXX shared module ../../lib/exyzformat.so
-[ 59%] Linking CXX shared module ../../lib/featformat.so
 [ 59%] Built target exyzformat
-[ 59%] Building CXX object src/formats/CMakeFiles/fpsformat.dir/fpsformat.cpp.o
+[ 59%] Building CXX object src/formats/CMakeFiles/fhformat.dir/fhformat.cpp.o
 [ 60%] Linking CXX shared module ../../lib/fastaformat.so
+[ 60%] Built target fastaformat
+[ 60%] Building CXX object src/formats/CMakeFiles/fingerprintformat.dir/fingerprintformat.cpp.o
+[ 60%] Linking CXX shared module ../../lib/featformat.so
+[ 60%] Building CXX object src/formats/CMakeFiles/fpsformat.dir/fpsformat.cpp.o
 [ 60%] Built target featformat
 [ 60%] Building CXX object src/formats/CMakeFiles/freefracformat.dir/freefracformat.cpp.o
-[ 60%] Built target fastaformat
-[ 60%] Linking CXX shared module ../../lib/fhformat.so
-[ 61%] Building CXX object src/formats/CMakeFiles/ghemicalformat.dir/ghemicalformat.cpp.o
-[ 61%] Built target fhformat
-[ 62%] Linking CXX shared module ../../lib/dlpolyformat.so
-[ 62%] Building CXX object src/formats/CMakeFiles/gromos96format.dir/gromos96format.cpp.o
-[ 62%] Built target dlpolyformat
-[ 62%] Building CXX object src/formats/CMakeFiles/groformat.dir/groformat.cpp.o
+[ 61%] Linking CXX shared module ../../lib/dlpolyformat.so
+[ 61%] Built target dlpolyformat
+[ 62%] Building CXX object src/formats/CMakeFiles/ghemicalformat.dir/ghemicalformat.cpp.o
+[ 62%] Linking CXX shared module ../../lib/fhformat.so
 [ 62%] Linking CXX shared module ../../lib/fastsearchformat.so
-[ 62%] Linking CXX shared module ../../lib/fingerprintformat.so
+[ 62%] Built target fhformat
+[ 62%] Building CXX object src/formats/CMakeFiles/gromos96format.dir/gromos96format.cpp.o
 [ 62%] Built target fastsearchformat
-[ 62%] Building CXX object src/formats/CMakeFiles/lmpdatformat.dir/lmpdatformat.cpp.o
-[ 62%] Built target fingerprintformat
-[ 62%] Building CXX object src/formats/CMakeFiles/lpmdformat.dir/lpmdformat.cpp.o
+[ 62%] Building CXX object src/formats/CMakeFiles/groformat.dir/groformat.cpp.o
+[ 62%] Linking CXX shared module ../../lib/fingerprintformat.so
 [ 62%] Linking CXX shared module ../../lib/fpsformat.so
-[ 63%] Linking CXX shared module ../../lib/gromos96format.so
-[ 63%] Built target fpsformat
-[ 63%] Building CXX object src/formats/CMakeFiles/mdffformat.dir/mdffformat.cpp.o
-[ 63%] Built target gromos96format
-[ 63%] Building CXX object src/formats/CMakeFiles/mmcifformat.dir/mmcifformat.cpp.o
-[ 64%] Linking CXX shared module ../../lib/freefracformat.so
-[ 64%] Linking CXX shared module ../../lib/ghemicalformat.so
+[ 62%] Built target fingerprintformat
+[ 62%] Building CXX object src/formats/CMakeFiles/lmpdatformat.dir/lmpdatformat.cpp.o
+[ 62%] Built target fpsformat
+[ 62%] Building CXX object src/formats/CMakeFiles/lpmdformat.dir/lpmdformat.cpp.o
+[ 63%] Linking CXX shared module ../../lib/freefracformat.so
+[ 64%] Linking CXX shared module ../../lib/gromos96format.so
 [ 64%] Built target freefracformat
-[ 64%] Building CXX object src/formats/CMakeFiles/mmodformat.dir/mmodformat.cpp.o
-[ 64%] Built target ghemicalformat
-[ 64%] Building CXX object src/formats/CMakeFiles/moldenformat.dir/moldenformat.cpp.o
+[ 64%] Building CXX object src/formats/CMakeFiles/mdffformat.dir/mdffformat.cpp.o
+[ 64%] Built target gromos96format
+[ 64%] Building CXX object src/formats/CMakeFiles/mmcifformat.dir/mmcifformat.cpp.o
+[ 64%] Linking CXX shared module ../../lib/ghemicalformat.so
 [ 64%] Linking CXX shared module ../../lib/cifformat.so
+[ 64%] Built target ghemicalformat
+[ 64%] Building CXX object src/formats/CMakeFiles/mmodformat.dir/mmodformat.cpp.o
 [ 64%] Built target cifformat
-[ 64%] Building CXX object src/formats/CMakeFiles/mpdformat.dir/mpdformat.cpp.o
+[ 64%] Building CXX object src/formats/CMakeFiles/moldenformat.dir/moldenformat.cpp.o
 [ 64%] Linking CXX shared module ../../lib/groformat.so
 [ 64%] Built target groformat
-[ 64%] Building CXX object src/formats/CMakeFiles/mpqcformat.dir/mpqcformat.cpp.o
+[ 64%] Building CXX object src/formats/CMakeFiles/mpdformat.dir/mpdformat.cpp.o
+[ 64%] Linking CXX shared module ../../lib/mmodformat.so
 [ 65%] Linking CXX shared module ../../lib/lmpdatformat.so
+[ 65%] Built target mmodformat
 [ 65%] Built target lmpdatformat
+[ 65%] Building CXX object src/formats/CMakeFiles/mpqcformat.dir/mpqcformat.cpp.o
 [ 65%] Building CXX object src/formats/CMakeFiles/msiformat.dir/msiformat.cpp.o
 [ 66%] Linking CXX shared module ../../lib/mpdformat.so
-[ 66%] Linking CXX shared module ../../lib/mmodformat.so
 [ 66%] Built target mpdformat
-[ 66%] Built target mmodformat
 [ 67%] Building CXX object src/formats/CMakeFiles/msmsformat.dir/msmsformat.cpp.o
-[ 67%] Building CXX object src/formats/CMakeFiles/opendxformat.dir/opendxformat.cpp.o
 [ 67%] Linking CXX shared module ../../lib/lpmdformat.so
 [ 67%] Built target lpmdformat
+[ 67%] Building CXX object src/formats/CMakeFiles/opendxformat.dir/opendxformat.cpp.o
+[ 67%] Linking CXX shared module ../../lib/moldenformat.so
 [ 67%] Linking CXX shared module ../../lib/mpqcformat.so
+[ 67%] Linking CXX shared module ../../lib/mdffformat.so
+[ 67%] Built target moldenformat
 [ 67%] Building CXX object src/formats/CMakeFiles/outformat.dir/outformat.cpp.o
 [ 67%] Built target mpqcformat
 [ 67%] Building CXX object src/formats/CMakeFiles/pcmodelformat.dir/pcmodelformat.cpp.o
-[ 67%] Linking CXX shared module ../../lib/moldenformat.so
-[ 67%] Linking CXX shared module ../../lib/msmsformat.so
-[ 67%] Linking CXX shared module ../../lib/mdffformat.so
-[ 67%] Linking CXX shared module ../../lib/msiformat.so
-[ 67%] Built target moldenformat
-[ 67%] Building CXX object src/formats/CMakeFiles/pdbqtformat.dir/pdbqtformat.cpp.o
-[ 67%] Built target msmsformat
 [ 67%] Built target mdffformat
+[ 67%] Building CXX object src/formats/CMakeFiles/pdbqtformat.dir/pdbqtformat.cpp.o
+[ 67%] Linking CXX shared module ../../lib/msiformat.so
+[ 67%] Linking CXX shared module ../../lib/msmsformat.so
+[ 67%] Linking CXX shared module ../../lib/mmcifformat.so
+[ 67%] Built target msiformat
+[ 67%] Built target msmsformat
 [ 68%] Building CXX object src/formats/CMakeFiles/pointcloudformat.dir/pointcloudformat.cpp.o
+[ 68%] Built target mmcifformat
 [ 68%] Building CXX object src/formats/CMakeFiles/posformat.dir/posformat.cpp.o
-[ 68%] Built target msiformat
 [ 69%] Building CXX object src/formats/CMakeFiles/pqrformat.dir/pqrformat.cpp.o
-[ 69%] Linking CXX shared module ../../lib/mmcifformat.so
-[ 69%] Built target mmcifformat
+[ 69%] Linking CXX shared module ../../lib/outformat.so
+[ 69%] Linking CXX shared module ../../lib/pcmodelformat.so
+[ 69%] Built target outformat
 [ 70%] Building CXX object src/formats/CMakeFiles/shelxformat.dir/shelxformat.cpp.o
 [ 71%] Linking CXX shared module ../../lib/opendxformat.so
-[ 71%] Linking CXX shared module ../../lib/outformat.so
-[ 71%] Built target outformat
-[ 71%] Built target opendxformat
-[ 71%] Building CXX object src/formats/CMakeFiles/smileyformat.dir/smileyformat.cpp.o
-[ 71%] Building CXX object src/formats/CMakeFiles/stlformat.dir/stlformat.cpp.o
-[ 71%] Linking CXX shared module ../../lib/pcmodelformat.so
 [ 71%] Built target pcmodelformat
-[ 71%] Building CXX object src/formats/CMakeFiles/thermoformat.dir/thermoformat.cpp.o
+[ 71%] Building CXX object src/formats/CMakeFiles/smileyformat.dir/smileyformat.cpp.o
+[ 71%] Built target opendxformat
+[ 71%] Building CXX object src/formats/CMakeFiles/stlformat.dir/stlformat.cpp.o
 [ 71%] Linking CXX shared module ../../lib/pointcloudformat.so
 [ 71%] Built target pointcloudformat
-[ 71%] Building CXX object src/formats/CMakeFiles/tinkerformat.dir/tinkerformat.cpp.o
 [ 71%] Linking CXX shared module ../../lib/posformat.so
+[ 71%] Building CXX object src/formats/CMakeFiles/thermoformat.dir/thermoformat.cpp.o
 /installs/openbabel-openbabel-alexandria-0.9/src/formats/pqrformat.cpp: In member function 'virtual bool OpenBabel::PQRFormat::WriteMolecule(OpenBabel::OBBase*, OpenBabel::OBConversion*)':
 /installs/openbabel-openbabel-alexandria-0.9/src/formats/pqrformat.cpp:511:58: warning: '__builtin___snprintf_chk' output may be truncated before the last format character [-Wformat-truncation=]
   511 |             snprintf(type_name, sizeof(type_name), " %-3s", tmp);
@@ -39396,13 +39393,7 @@ In file included from /usr/include/stdio.h:894,
    73 |                                    __va_arg_pack ());
       |                                    ~~~~~~~~~~~~~~~~~
 [ 71%] Built target posformat
-[ 72%] Building CXX object src/formats/CMakeFiles/unichemformat.dir/unichemformat.cpp.o
-[ 72%] Linking CXX shared module ../../lib/shelxformat.so
-[ 72%] Built target shelxformat
-[ 72%] Building CXX object src/formats/CMakeFiles/viewmolformat.dir/viewmolformat.cpp.o
-[ 72%] Linking CXX shared module ../../lib/stlformat.so
-[ 72%] Built target stlformat
-[ 72%] Building CXX object src/formats/CMakeFiles/wlnformat.dir/wlnformat.cpp.o
+[ 71%] Building CXX object src/formats/CMakeFiles/tinkerformat.dir/tinkerformat.cpp.o
 /installs/openbabel-openbabel-alexandria-0.9/src/formats/pdbqtformat.cpp: In function 'void OpenBabel::OutputAtom(OpenBabel::OBAtom*, std::ostream&, unsigned int)':
 /installs/openbabel-openbabel-alexandria-0.9/src/formats/pdbqtformat.cpp:345:52: warning: '__builtin___snprintf_chk' output may be truncated before the last format character [-Wformat-truncation=]
   345 |       snprintf(type_name, sizeof(type_name), " %-3s", tmp);
@@ -39450,25 +39441,35 @@ In file included from /usr/include/stdio.h:894,
       |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    73 |                                    __va_arg_pack ());
       |                                    ~~~~~~~~~~~~~~~~~
-[ 72%] Linking CXX shared module ../../lib/pqrformat.so
-[ 72%] Built target pqrformat
+[ 71%] Linking CXX shared module ../../lib/pqrformat.so
+[ 71%] Linking CXX shared module ../lib/plugin_charges.so
+[ 71%] Linking CXX shared module ../../lib/shelxformat.so
+[ 71%] Built target pqrformat
+[ 72%] Building CXX object src/formats/CMakeFiles/unichemformat.dir/unichemformat.cpp.o
+[ 72%] Built target plugin_charges
+[ 72%] Built target shelxformat
+[ 72%] Building CXX object src/formats/CMakeFiles/viewmolformat.dir/viewmolformat.cpp.o
+[ 72%] Linking CXX shared module ../../lib/stlformat.so
+[ 72%] Building CXX object src/formats/CMakeFiles/wlnformat.dir/wlnformat.cpp.o
+[ 72%] Built target stlformat
 [ 72%] Building CXX object src/formats/CMakeFiles/xedformat.dir/xedformat.cpp.o
 [ 72%] Linking CXX shared module ../../lib/thermoformat.so
-[ 72%] Linking CXX shared module ../../lib/unichemformat.so
-[ 72%] Built target thermoformat
-[ 73%] Building CXX object src/formats/CMakeFiles/xyzformat.dir/xyzformat.cpp.o
-[ 73%] Built target unichemformat
-[ 73%] Building CXX object src/formats/CMakeFiles/yasaraformat.dir/yasaraformat.cpp.o
-[ 74%] Linking CXX shared module ../../lib/viewmolformat.so
-[ 75%] Linking CXX shared module ../../lib/tinkerformat.so
-[ 75%] Building CXX object src/formats/CMakeFiles/wlnformat.dir/wln-nextmove.cpp.o
-[ 75%] Built target viewmolformat
+[ 73%] Linking CXX shared module ../../lib/tinkerformat.so
+[ 73%] Built target thermoformat
+[ 74%] Building CXX object src/formats/CMakeFiles/xyzformat.dir/xyzformat.cpp.o
+[ 74%] Built target tinkerformat
+[ 74%] Building CXX object src/formats/CMakeFiles/yasaraformat.dir/yasaraformat.cpp.o
+[ 74%] Building CXX object src/formats/CMakeFiles/wlnformat.dir/wln-nextmove.cpp.o
+[ 74%] Linking CXX shared module ../../lib/unichemformat.so
+[ 75%] Linking CXX shared module ../../lib/viewmolformat.so
+[ 75%] Built target unichemformat
 [ 75%] Building CXX object src/formats/CMakeFiles/rxnformat.dir/rxnformat.cpp.o
-[ 75%] Built target tinkerformat
+[ 75%] Built target viewmolformat
 [ 75%] Building CXX object src/formats/CMakeFiles/chemdrawcdx.dir/chemdrawcdx.cpp.o
 [ 75%] Linking CXX shared module ../../lib/xedformat.so
 [ 75%] Built target xedformat
 [ 75%] Building CXX object src/formats/CMakeFiles/chemkinformat.dir/chemkinformat.cpp.o
+[ 75%] Linking CXX shared module ../../lib/pdbqtformat.so
 [ 75%] Linking CXX shared module ../../lib/smileyformat.so
 /installs/openbabel-openbabel-alexandria-0.9/src/formats/yasaraformat.cpp: In member function 'virtual bool OpenBabel::YOBFormat::WriteMolecule(OpenBabel::OBBase*, OpenBabel::OBConversion*)':
 /installs/openbabel-openbabel-alexandria-0.9/src/formats/yasaraformat.cpp:571:36: warning: '__builtin___snprintf_chk' output truncated before the last format character [-Wformat-truncation=]
@@ -39494,125 +39495,124 @@ In file included from /usr/include/stdio.h:894,
       |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    73 |                                    __va_arg_pack ());
       |                                    ~~~~~~~~~~~~~~~~~
-[ 75%] Built target smileyformat
+[ 75%] Built target pdbqtformat
 [ 75%] Building CXX object src/formats/CMakeFiles/rinchiformat.dir/rinchiformat.cpp.o
+[ 75%] Built target smileyformat
+[ 75%] Building CXX object src/formats/CMakeFiles/rsmiformat.dir/rsmiformat.cpp.o
 [ 75%] Linking CXX shared module ../../lib/yasaraformat.so
 [ 75%] Built target yasaraformat
-[ 75%] Building CXX object src/formats/CMakeFiles/rsmiformat.dir/rsmiformat.cpp.o
+[ 75%] Building CXX object src/formats/CMakeFiles/cdxmlformat.dir/xml/cdxmlformat.cpp.o
 [ 75%] Linking CXX shared module ../../lib/xyzformat.so
 [ 75%] Built target xyzformat
-[ 75%] Linking CXX shared module ../../lib/pdbqtformat.so
-[ 75%] Building CXX object src/formats/CMakeFiles/cdxmlformat.dir/xml/cdxmlformat.cpp.o
-[ 75%] Linking CXX shared module ../../lib/rxnformat.so
-[ 75%] Built target pdbqtformat
 [ 75%] Building CXX object src/formats/CMakeFiles/cmlformat.dir/xml/cmlformat.cpp.o
+[ 75%] Linking CXX shared module ../../lib/rxnformat.so
 [ 75%] Built target rxnformat
 [ 75%] Building CXX object src/formats/CMakeFiles/pubchem.dir/xml/pubchem.cpp.o
 [ 75%] Linking CXX shared module ../../lib/rinchiformat.so
 [ 75%] Built target rinchiformat
 [ 76%] Building CXX object src/formats/CMakeFiles/xmlformat.dir/xml/xmlformat.cpp.o
 [ 76%] Linking CXX shared module ../../lib/wlnformat.so
+[ 76%] Building CXX object src/formats/CMakeFiles/cdxmlformat.dir/xml/xml.cpp.o
+[ 76%] Linking CXX shared module ../../lib/rsmiformat.so
 [ 76%] Built target wlnformat
 [ 76%] Building CXX object src/formats/CMakeFiles/cmlreactformat.dir/xml/cmlreactformat.cpp.o
-[ 76%] Building CXX object src/formats/CMakeFiles/cdxmlformat.dir/xml/xml.cpp.o
-[ 76%] Building CXX object src/formats/CMakeFiles/pubchem.dir/xml/xml.cpp.o
-[ 76%] Linking CXX shared module ../../lib/rsmiformat.so
 [ 76%] Built target rsmiformat
 [ 77%] Building CXX object src/formats/CMakeFiles/chemdoodlejsonformat.dir/json/chemdoodlejsonformat.cpp.o
-[ 77%] Linking CXX shared module ../../lib/chemdrawcdx.so
+[ 77%] Building CXX object src/formats/CMakeFiles/pubchem.dir/xml/xml.cpp.o
 [ 77%] Building CXX object src/formats/CMakeFiles/xmlformat.dir/xml/xml.cpp.o
+[ 77%] Linking CXX shared module ../../lib/chemdrawcdx.so
 [ 77%] Built target chemdrawcdx
 [ 78%] Building CXX object src/formats/CMakeFiles/pubchemjsonformat.dir/json/pubchemjsonformat.cpp.o
-[ 78%] Linking CXX shared module ../../lib/pubchem.so
 [ 78%] Linking CXX shared module ../../lib/cdxmlformat.so
-[ 78%] Built target pubchem
 [ 78%] Built target cdxmlformat
 [ 78%] Building CXX object tools/CMakeFiles/obabel.dir/obabel.cpp.o
+[ 78%] Linking CXX shared module ../../lib/pubchem.so
+[ 78%] Built target pubchem
 [ 78%] Building CXX object tools/CMakeFiles/obconformer.dir/obconformer.cpp.o
 [ 78%] Linking CXX shared module ../../lib/xmlformat.so
 [ 78%] Built target xmlformat
 [ 78%] Building CXX object tools/CMakeFiles/obenergy.dir/obenergy.cpp.o
 [ 78%] Linking CXX shared module ../../lib/chemkinformat.so
 [ 78%] Built target chemkinformat
-[ 78%] Building CXX object tools/CMakeFiles/obfit.dir/obfit.cpp.o
 [ 78%] Linking CXX executable ../bin/obabel
+[ 78%] Building CXX object tools/CMakeFiles/obfit.dir/obfit.cpp.o
 [ 78%] Built target obabel
 [ 79%] Building CXX object tools/CMakeFiles/obfitall.dir/obfitall.cpp.o
 [ 79%] Linking CXX executable ../bin/obconformer
-[ 79%] Linking CXX executable ../bin/obenergy
 [ 79%] Built target obconformer
+[ 79%] Linking CXX executable ../bin/obenergy
 [ 79%] Building CXX object tools/CMakeFiles/obgen.dir/obgen.cpp.o
-[ 79%] Built target obenergy
 [ 80%] Building CXX object src/formats/CMakeFiles/cmlreactformat.dir/xml/xml.cpp.o
+[ 80%] Built target obenergy
 [ 81%] Building CXX object tools/CMakeFiles/obminimize.dir/obminimize.cpp.o
 [ 81%] Linking CXX executable ../bin/obfit
+[ 81%] Linking CXX executable ../bin/obfitall
 [ 81%] Built target obfit
 [ 81%] Building CXX object tools/CMakeFiles/obmm.dir/obmm.cpp.o
 [ 81%] Building CXX object src/formats/CMakeFiles/cmlformat.dir/xml/xml.cpp.o
-[ 81%] Linking CXX executable ../bin/obfitall
-[ 81%] Linking CXX executable ../bin/obgen
-[ 81%] Linking CXX executable ../bin/obminimize
 [ 81%] Built target obfitall
 [ 81%] Building CXX object tools/CMakeFiles/obprobe.dir/obprobe.cpp.o
+[ 81%] Linking CXX executable ../bin/obgen
+[ 81%] Linking CXX executable ../bin/obminimize
+[ 81%] Linking CXX shared module ../../lib/cmlreactformat.so
 [ 81%] Built target obgen
 [ 81%] Building CXX object tools/CMakeFiles/obprop.dir/obprop.cpp.o
-[ 81%] Linking CXX shared module ../../lib/cmlreactformat.so
+[ 81%] Linking CXX shared module ../../lib/chemdoodlejsonformat.so
 [ 81%] Built target obminimize
 [ 82%] Building CXX object tools/CMakeFiles/obrotamer.dir/obrotamer.cpp.o
 [ 82%] Built target cmlreactformat
 [ 82%] Building CXX object tools/CMakeFiles/obrotate.dir/obrotate.cpp.o
-[ 82%] Linking CXX shared module ../../lib/chemdoodlejsonformat.so
 [ 82%] Built target chemdoodlejsonformat
 [ 83%] Building CXX object tools/CMakeFiles/obsym.dir/obsym.cpp.o
-[ 83%] Linking CXX executable ../bin/obmm
 [ 83%] Linking CXX shared module ../../lib/cmlformat.so
-[ 83%] Built target obmm
-[ 83%] Building CXX object tools/CMakeFiles/obtautomer.dir/obtautomer.cpp.o
 [ 83%] Built target cmlformat
-[ 83%] Building CXX object tools/CMakeFiles/obthermo.dir/obthermo.cpp.o
-[ 83%] Linking CXX executable ../bin/obprop
+[ 83%] Building CXX object tools/CMakeFiles/obtautomer.dir/obtautomer.cpp.o
 [ 83%] Linking CXX executable ../bin/obsym
 [ 84%] Linking CXX executable ../bin/obprobe
-[ 84%] Built target obprop
-[ 84%] Building CXX object tools/CMakeFiles/obdistgen.dir/obdistgen.cpp.o
+[ 84%] Linking CXX executable ../bin/obmm
 [ 84%] Built target obsym
-[ 84%] Building CXX object tools/CMakeFiles/obgrep.dir/obgrep.cpp.o
 [ 84%] Built target obprobe
+[ 84%] Building CXX object tools/CMakeFiles/obthermo.dir/obthermo.cpp.o
+[ 84%] Building CXX object tools/CMakeFiles/obdistgen.dir/obdistgen.cpp.o
+[ 84%] Built target obmm
+[ 84%] Linking CXX executable ../bin/obprop
+[ 84%] Building CXX object tools/CMakeFiles/obgrep.dir/obgrep.cpp.o
+[ 84%] Built target obprop
 [ 84%] Building CXX object tools/CMakeFiles/obspectrophore.dir/obspectrophore.cpp.o
-[ 84%] Linking CXX executable ../bin/obrotamer
 [ 84%] Linking CXX executable ../bin/obrotate
+[ 84%] Linking CXX executable ../bin/obrotamer
+[ 84%] Linking CXX executable ../bin/obtautomer
+[ 84%] Built target obrotate
 [ 84%] Built target obrotamer
 [ 84%] Building CXX object tools/CMakeFiles/obrms.dir/obrms.cpp.o
-[ 84%] Built target obrotate
 [ 84%] Building CXX object test/CMakeFiles/test_runner.dir/test_runner.cpp.o
-[ 84%] Linking CXX executable ../bin/obtautomer
-[ 85%] Linking CXX executable ../bin/obthermo
-[ 86%] Building CXX object test/CMakeFiles/test_runner.dir/aligntest.cpp.o
-[ 86%] Built target obtautomer
-[ 86%] Building CXX object test/CMakeFiles/test_inchiwrite.dir/inchiwrite.cpp.o
+[ 84%] Built target obtautomer
+[ 84%] Building CXX object test/CMakeFiles/test_inchiwrite.dir/inchiwrite.cpp.o
+[ 85%] Building CXX object test/CMakeFiles/test_runner.dir/aligntest.cpp.o
+[ 86%] Linking CXX executable ../bin/obthermo
 [ 86%] Built target obthermo
 [ 86%] Building CXX object test/CMakeFiles/roundtrip.dir/roundtrip.cpp.o
-[ 86%] Linking CXX shared module ../../lib/pubchemjsonformat.so
 [ 86%] Linking CXX executable ../bin/obgrep
+[ 86%] Built target obgrep
+[ 86%] Building CXX object test/CMakeFiles/test_inchiwrite.dir/__/src/formats/getinchi.cpp.o
+[ 86%] Linking CXX shared module ../../lib/pubchemjsonformat.so
 [ 86%] Built target pubchemjsonformat
 [ 86%] Building CXX object test/CMakeFiles/test_runner.dir/aliastest.cpp.o
-[ 86%] Built target obgrep
 [ 86%] Building CXX object test/CMakeFiles/test_runner.dir/automorphismtest.cpp.o
-[ 86%] Building CXX object test/CMakeFiles/test_inchiwrite.dir/__/src/formats/getinchi.cpp.o
 [ 87%] Linking CXX executable ../bin/obdistgen
-[ 87%] Linking CXX executable ../bin/obspectrophore
+[ 87%] Linking CXX executable ../bin/test_inchiwrite
 [ 87%] Built target obdistgen
-[ 88%] Building CXX object test/CMakeFiles/test_runner.dir/buildertest.cpp.o
+[ 87%] Building CXX object test/CMakeFiles/test_runner.dir/buildertest.cpp.o
+[ 87%] Linking CXX executable ../bin/obspectrophore
+[ 87%] Built target test_inchiwrite
+[ 87%] Building CXX object test/CMakeFiles/test_runner.dir/canonconsistenttest.cpp.o
 [ 88%] Linking CXX executable ../bin/roundtrip
 [ 88%] Built target obspectrophore
-[ 88%] Building CXX object test/CMakeFiles/test_runner.dir/canonconsistenttest.cpp.o
-[ 88%] Linking CXX executable ../bin/obrms
-[ 88%] Built target roundtrip
 [ 88%] Building CXX object test/CMakeFiles/test_runner.dir/canonfragmenttest.cpp.o
-[ 88%] Linking CXX executable ../bin/test_inchiwrite
-[ 88%] Built target obrms
+[ 88%] Built target roundtrip
 [ 89%] Building CXX object test/CMakeFiles/test_runner.dir/canonstabletest.cpp.o
-[ 89%] Built target test_inchiwrite
+[ 89%] Linking CXX executable ../bin/obrms
+[ 89%] Built target obrms
 [ 89%] Building CXX object test/CMakeFiles/test_runner.dir/carspacegrouptest.cpp.o
 [ 89%] Building CXX object test/CMakeFiles/test_runner.dir/cifspacegrouptest.cpp.o
 [ 89%] Building CXX object test/CMakeFiles/test_runner.dir/cistranstest.cpp.o
@@ -42833,14 +42833,12 @@ CMake Warning:
 
 
 -- Build files have been written to: /installs/ACT-0.97/build
-+ export OMPI_ALLOW_RUN_AS_ROOT=1
-+ export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
 + make -j 8
 [  0%] Generating baseversion-gen.cpp
 [  1%] Building CXX object src/CMakeFiles/actLib.dir/act/basics/allmols.cpp.o
-[  1%] Building CXX object src/CMakeFiles/actLib.dir/act/basics/atomprops.cpp.o
 [  1%] Building CXX object src/CMakeFiles/actLib.dir/act/basics/atomization_energy.cpp.o
 [  1%] Building CXX object src/CMakeFiles/actLib.dir/act/basics/chargemodel.cpp.o
+[  1%] Building CXX object src/CMakeFiles/actLib.dir/act/basics/atomprops.cpp.o
 [  1%] Building CXX object src/CMakeFiles/actLib.dir/act/basics/dataset.cpp.o
 [  2%] Building CXX object src/CMakeFiles/actLib.dir/act/basics/identifier.cpp.o
 [  2%] Building CXX object src/CMakeFiles/actLib.dir/act/basics/interactiontype.cpp.o
@@ -42851,7 +42849,6 @@ CMake Warning:
 [  4%] Building CXX object src/CMakeFiles/actLib.dir/act/coulombintegrals/DSlater_1S_3S.cpp.o
 [  4%] Building CXX object src/CMakeFiles/actLib.dir/act/coulombintegrals/DSlater_2S_2S.cpp.o
 [  4%] Building CXX object src/CMakeFiles/actLib.dir/act/coulombintegrals/DSlater_2S_3S.cpp.o
-[  4%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/disre.cpp.o
 [  4%] Building CXX object src/CMakeFiles/actLib.dir/act/coulombintegrals/DSlater_3S_3S.cpp.o
 [  5%] Building CXX object src/CMakeFiles/actLib.dir/act/coulombintegrals/Slater_1S_1S.cpp.o
 [  5%] Building CXX object src/CMakeFiles/actLib.dir/act/coulombintegrals/Slater_1S_2S.cpp.o
@@ -42863,202 +42860,163 @@ CMake Warning:
 [  7%] Building CXX object src/CMakeFiles/actLib.dir/act/forces/combinationrules.cpp.o
 [  7%] Building CXX object src/CMakeFiles/actLib.dir/act/forces/forcecomputer.cpp.o
 [  8%] Building CXX object src/CMakeFiles/actLib.dir/act/forces/forcecomputerimpl.cpp.o
-[  8%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/listed-forces.cpp.o
 [  8%] Building CXX object src/CMakeFiles/actLib.dir/act/forces/forcecomputerutils.cpp.o
 [  8%] Building CXX object src/CMakeFiles/actLib.dir/act/forces/functiontype.cpp.o
 [  8%] Building CXX object src/CMakeFiles/actLib.dir/act/forces/vsitehandler.cpp.o
 [  8%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/gene_pool.cpp.o
-[ 10%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/listed-internal.cpp.o
-[ 10%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/manage-threading.cpp.o
-[ 11%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/genetic_algorithm.cpp.o
-[ 11%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/orires.cpp.o
-[ 11%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/genome.cpp.o
-[ 11%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/npointcrossover.cpp.o
-[ 11%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/penalizer.cpp.o
-[ 11%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/probability_computer.cpp.o
-[ 11%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/pairs.cpp.o
-[ 12%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/position-restraints.cpp.o
-[ 14%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/selector.cpp.o
-[ 14%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/terminator.cpp.o
-[ 14%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/categories.cpp.o
-[ 14%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/restcbt.cpp.o
-[ 14%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlinehelpcontext.cpp.o
-[ 14%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/composition.cpp.o
-[ 15%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/edit_mp.cpp.o
-[ 15%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlinehelpmodule.cpp.o
-[ 15%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/experiment.cpp.o
-[ 15%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/fragment.cpp.o
-[ 15%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlinehelpwriter.cpp.o
-[ 15%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molprop.cpp.o
-[ 15%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molprop_sqlite3.cpp.o
-[ 17%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molprop_tables.cpp.o
-[ 18%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlineinit.cpp.o
-[ 18%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlinemodule.cpp.o
-[ 18%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlinemodulemanager.cpp.o
-[ 18%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlineoptionsmodule.cpp.o
-[ 18%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molprop_util.cpp.o
-[ 18%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molprop_xml.cpp.o
-[ 18%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlineparser.cpp.o
-[ 18%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molpropobservable.cpp.o
-[ 20%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlineprogramcontext.cpp.o
-[ 20%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/filenm.cpp.o
-[ 21%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/multipole_names.cpp.o
-[ 21%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/pargs.cpp.o
-[ 21%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/shellcompletions.cpp.o
-[ 21%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/phase.cpp.o
-[ 21%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/topologyentry.cpp.o
-[ 21%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/act_checksum.cpp.o
-[ 22%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/viewit.cpp.o
-[ 22%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/3dtransforms.cpp.o
-[ 22%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/combruleutil.cpp.o
-[ 22%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/do_fit.cpp.o
-[ 22%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/functions.cpp.o
-[ 24%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/edit_ff.cpp.o
-[ 24%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/invertmatrix.cpp.o
-[ 24%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield.cpp.o
-[ 24%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_low.cpp.o
-[ 25%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/matrix.cpp.o
-[ 25%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/nrjac.cpp.o
-[ 25%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/units.cpp.o
-[ 25%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/utilities.cpp.o
-[ 25%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_parameter.cpp.o
-[ 27%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_parameterlist.cpp.o
-[ 27%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_parametername.cpp.o
-[ 27%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_tables.cpp.o
-[ 28%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/veccompare.cpp.o
-[ 28%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/vecdump.cpp.o
-[ 28%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/df_history.cpp.o
-[ 28%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/iforceprovider.cpp.o
-[ 28%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_utils.cpp.o
-[ 28%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_xml.cpp.o
-[ 28%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/inputrec.cpp.o
-[ 30%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/md_enums.cpp.o
-[ 30%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/observableshistory.cpp.o
-[ 30%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/state.cpp.o
-[ 31%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/gen_ff.cpp.o
-[ 31%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/merge_ff.cpp.o
-[ 31%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/onlinehelp/helpformat.cpp.o
-[ 31%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/particletype.cpp.o
-[ 32%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/onlinehelp/helpmanager.cpp.o
-[ 32%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/vsite.cpp.o
-[ 32%] Building CXX object src/CMakeFiles/actLib.dir/act/qgen/qgen_acm.cpp.o
-[ 32%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/onlinehelp/helptopic.cpp.o
-[ 32%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/onlinehelp/helpwritercontext.cpp.o
-[ 34%] Building CXX object src/CMakeFiles/actLib.dir/act/qgen/qgen_cube.cpp.o
-[ 34%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/onlinehelp/rstparser.cpp.o
-[ 34%] Building CXX object src/CMakeFiles/actLib.dir/act/qgen/qgen_resp.cpp.o
-[ 34%] Building CXX object src/CMakeFiles/actLib.dir/act/qgen/qtype.cpp.o
-[ 34%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/pbcutil/boxutilities.cpp.o
-[ 34%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/communicationrecord.cpp.o
-[ 35%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/pbcutil/mshift.cpp.o
-[ 35%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/pbcutil/pbc-simd.cpp.o
-[ 35%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/pbcutil/pbc.cpp.o
-[ 37%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/jsontree.cpp.o
-[ 37%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/latex_util.cpp.o
-[ 37%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/memory_check.cpp.o
-[ 37%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/pbcutil/rmpbc.cpp.o
-[ 37%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/regression.cpp.o
-[ 37%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/stringutil.cpp.o
-[ 38%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/units.cpp.o
-[ 38%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/random/seed.cpp.o
-[ 38%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/xml_util.cpp.o
-[ 40%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/random/tabulatednormaldistribution.cpp.o
-[ 40%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/acm_ga.cpp.o
-[ 40%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/acmfitnesscomputer.cpp.o
-[ 40%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/tables/forcetable.cpp.o
-[ 40%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/tables/splineutil.cpp.o
-[ 41%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/acmindividual.cpp.o
-[ 41%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/acminitializer.cpp.o
-[ 41%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/acthelper.cpp.o
-[ 41%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/timing/cyclecounter.cpp.o
-[ 42%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/timing/wallcycle.cpp.o
-[ 42%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/timing/walltime_accounting.cpp.o
-[ 42%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/actmiddleman.cpp.o
-[ 42%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/alex_modules.cpp.o
-[ 42%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/atomprop.cpp.o
-[ 44%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/allbondeds.cpp.o
-[ 44%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/analyze.cpp.o
-[ 44%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/atype_mapping.cpp.o
-[ 44%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/babel_io.cpp.o
-[ 45%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/bayes.cpp.o
-[ 45%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/atoms.cpp.o
-[ 45%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/b2utils.cpp.o
-[ 45%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/confighandler.cpp.o
-[ 45%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/atomsbuilder.cpp.o
-[ 45%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/devcomputer.cpp.o
-[ 47%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/block.cpp.o
-[ 47%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/dissociation_energy.cpp.o
-[ 47%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/exclusionblocks.cpp.o
-[ 48%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/fetch_charges.cpp.o
-[ 48%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/forcefieldparameters.cpp.o
-[ 48%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/idef.cpp.o
-[ 50%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/ifunc.cpp.o
-[ 50%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/fill_inputrec.cpp.o
-[ 50%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/index.cpp.o
-[ 50%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/fragmenthandler.cpp.o
-[ 50%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/gentop.cpp.o
-[ 50%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/geometry_ff.cpp.o
-[ 51%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/gromacs_top.cpp.o
-[ 51%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/invblock.cpp.o
-[ 51%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/mcmcmutator.cpp.o
-[ 51%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/mtop_util.cpp.o
-[ 51%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/min_complex.cpp.o
-[ 51%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/molgen.cpp.o
-[ 51%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/residuetypes.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/molhandler.cpp.o
-[ 54%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/symtab.cpp.o
-[ 54%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/molselect.cpp.o
-[ 54%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/topology.cpp.o
-[ 54%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/actmol.cpp.o
-[ 54%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/actmol_low.cpp.o
-[ 54%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/normalmodes.cpp.o
-[ 54%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/topsort.cpp.o
-[ 55%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/openmm_xml.cpp.o
-[ 55%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/alignedallocator.cpp.o
-[ 57%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/basenetwork.cpp.o
-[ 57%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/baseversion.cpp.o
-[ 57%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/pdbwriter.cpp.o
-[ 57%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/binaryinformation.cpp.o
-[ 57%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/compare.cpp.o
-In file included from /installs/ACT-0.97/src/gromacs/utility/binaryinformation.cpp:75:
-/installs/ACT-0.97/build/src/buildinfo.h:73: warning: "HWLOC_VERSION" redefined
-   73 | #define HWLOC_VERSION "2.5.0"
-      | 
-In file included from /usr/include/hwloc.h:56,
-                 from /installs/ACT-0.97/src/gromacs/utility/binaryinformation.cpp:63:
-/usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:15: note: this is the location of the previous definition
-   15 | #define HWLOC_VERSION "2.7.0"
-      | 
-In file included from /installs/ACT-0.97/src/gromacs/utility/exceptions.h:63,
-                 from /installs/ACT-0.97/src/gromacs/utility/binaryinformation.cpp:78:
-/installs/ACT-0.97/src/gromacs/utility/binaryinformation.cpp: In function 'void {anonymous}::printCopyright(gmx::TextWriter*)':
-/installs/ACT-0.97/src/gromacs/utility/binaryinformation.cpp:171:65: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
-  171 |             GMX_RELEASE_ASSERT(strlen(Contributors[i]) + offset < asize(buf),
-      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
-/installs/ACT-0.97/src/gromacs/utility/gmxassert.h:76:15: note: in definition of macro 'GMX_RELEASE_ASSERT'
-   76 |     ((void) ((condition) ? (void)0 :                               \
-      |               ^~~~~~~~~
-[ 57%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/coolstuff.cpp.o
-[ 58%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/cstringutil.cpp.o
-[ 58%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/datafilefinder.cpp.o
-[ 58%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/directoryenumerator.cpp.o
-[ 58%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/percentmutator.cpp.o
-[ 58%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/princ.cpp.o
-[ 60%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/secondvirial.cpp.o
-[ 60%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/errorcodes.cpp.o
-[ 60%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/errorformat.cpp.o
-[ 61%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/exceptions.cpp.o
-[ 61%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/fatalerror.cpp.o
-[ 61%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/simulate.cpp.o
-[ 61%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/staticindividualinfo.cpp.o
-[ 61%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/fileredirector.cpp.o
-[ 61%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/symmetrize_charges.cpp.o
-[ 61%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/filestream.cpp.o
-[ 61%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/thermochemistry.cpp.o
-[ 62%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/futil.cpp.o
-[ 64%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/topology.cpp.o
-[ 64%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/train_ff.cpp.o
-[ 64%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/gmxassert.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/genetic_algorithm.cpp.o
+[ 10%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/disre.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/genome.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/npointcrossover.cpp.o
+[ 10%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/listed-forces.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/penalizer.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/probability_computer.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/selector.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/actLib.dir/act/ga/terminator.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/categories.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/composition.cpp.o
+[ 12%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/listed-internal.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/edit_mp.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/experiment.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/fragment.cpp.o
+[ 14%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/manage-threading.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molprop.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molprop_sqlite3.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molprop_tables.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molprop_util.cpp.o
+[ 15%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/orires.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molprop_xml.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/molpropobservable.cpp.o
+[ 15%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/pairs.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/multipole_names.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/phase.cpp.o
+[ 18%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/position-restraints.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/actLib.dir/act/molprop/topologyentry.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/act_checksum.cpp.o
+[ 18%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/listed-forces/restcbt.cpp.o
+[ 18%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlinehelpcontext.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/combruleutil.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/edit_ff.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_low.cpp.o
+[ 20%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlinehelpmodule.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_parameter.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_parameterlist.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_parametername.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_tables.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_utils.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/forcefield_xml.cpp.o
+[ 21%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlinehelpwriter.cpp.o
+[ 22%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlineinit.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/gen_ff.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/merge_ff.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/particletype.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/actLib.dir/act/forcefield/vsite.cpp.o
+[ 24%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlinemodule.cpp.o
+[ 24%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlinemodulemanager.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/actLib.dir/act/qgen/qgen_acm.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/actLib.dir/act/qgen/qgen_cube.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/actLib.dir/act/qgen/qgen_resp.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/actLib.dir/act/qgen/qtype.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/communicationrecord.cpp.o
+[ 25%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlineoptionsmodule.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/jsontree.cpp.o
+[ 27%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlineparser.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/latex_util.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/memory_check.cpp.o
+[ 28%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/cmdlineprogramcontext.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/regression.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/stringutil.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/units.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/actLib.dir/act/utility/xml_util.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/acm_ga.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/acmfitnesscomputer.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/acmindividual.cpp.o
+[ 31%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/filenm.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/acminitializer.cpp.o
+[ 31%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/pargs.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/acthelper.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/actmiddleman.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/alex_modules.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/allbondeds.cpp.o
+[ 32%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/shellcompletions.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/analyze.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/atype_mapping.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/babel_io.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/bayes.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/b2utils.cpp.o
+[ 35%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/commandline/viewit.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/confighandler.cpp.o
+[ 35%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/3dtransforms.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/devcomputer.cpp.o
+[ 35%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/do_fit.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/dissociation_energy.cpp.o
+[ 35%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/functions.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/fetch_charges.cpp.o
+[ 37%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/invertmatrix.cpp.o
+[ 38%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/matrix.cpp.o
+[ 38%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/nrjac.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/fill_inputrec.cpp.o
+[ 38%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/units.cpp.o
+[ 38%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/utilities.cpp.o
+[ 40%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/veccompare.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/fragmenthandler.cpp.o
+[ 40%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/math/vecdump.cpp.o
+[ 40%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/df_history.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/gentop.cpp.o
+[ 40%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/iforceprovider.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/geometry_ff.cpp.o
+[ 40%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/inputrec.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/gromacs_top.cpp.o
+[ 42%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/md_enums.cpp.o
+[ 42%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/observableshistory.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/mcmcmutator.cpp.o
+[ 42%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/mdtypes/state.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/min_complex.cpp.o
+[ 42%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/onlinehelp/helpformat.cpp.o
+[ 44%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/onlinehelp/helpmanager.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/molgen.cpp.o
+[ 44%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/onlinehelp/helptopic.cpp.o
+[ 44%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/onlinehelp/helpwritercontext.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/molhandler.cpp.o
+[ 45%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/onlinehelp/rstparser.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/molselect.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/actmol.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/actmol_low.cpp.o
+[ 45%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/pbcutil/boxutilities.cpp.o
+[ 47%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/pbcutil/mshift.cpp.o
+[ 47%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/pbcutil/pbc-simd.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/normalmodes.cpp.o
+[ 47%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/pbcutil/pbc.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/openmm_xml.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/pdbwriter.cpp.o
+[ 48%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/pbcutil/rmpbc.cpp.o
+[ 48%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/random/seed.cpp.o
+[ 50%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/random/tabulatednormaldistribution.cpp.o
+[ 50%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/tables/forcetable.cpp.o
+[ 50%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/tables/splineutil.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/percentmutator.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/princ.cpp.o
+[ 50%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/timing/cyclecounter.cpp.o
+[ 51%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/timing/wallcycle.cpp.o
+[ 51%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/timing/walltime_accounting.cpp.o
+[ 51%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/atomprop.cpp.o
+[ 51%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/atoms.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/secondvirial.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/simulate.cpp.o
+[ 52%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/atomsbuilder.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/staticindividualinfo.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/symmetrize_charges.cpp.o
+[ 54%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/block.cpp.o
+[ 54%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/exclusionblocks.cpp.o
+[ 54%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/forcefieldparameters.cpp.o
+[ 54%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/idef.cpp.o
+[ 55%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/ifunc.cpp.o
+[ 55%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/index.cpp.o
+[ 55%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/thermochemistry.cpp.o
+[ 57%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/topology.cpp.o
+[ 57%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/invblock.cpp.o
+[ 57%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/mtop_util.cpp.o
 In file included from /usr/include/eigen3/Eigen/Core:341,
                  from /usr/include/eigen3/Eigen/Eigenvalues:11,
                  from /installs/ACT-0.97/src/act/alexandria/molhandler.cpp:40:
@@ -43087,16 +43045,36 @@ In file included from /usr/include/eigen3/Eigen/Core:341,
 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:105:24: note: by argument 5 of type 'const double*' to 'static void Eigen::internal::triangular_matrix_vector_product<Index, Mode, LhsScalar, ConjLhs, RhsScalar, ConjRhs, 1, Version>::run(Index, Index, const LhsScalar*, Index, const RhsScalar*, Index, Eigen::internal::triangular_matrix_vector_product<Index, Mode, LhsScalar, ConjLhs, RhsScalar, ConjRhs, 1, Version>::ResScalar*, Index, const ResScalar&) [with Index = long int; int Mode = 6; LhsScalar = double; bool ConjLhs = false; RhsScalar = double; bool ConjRhs = false; int Version = 0]' declared here
   105 | EIGEN_DONT_INLINE void triangular_matrix_vector_product<Index,Mode,LhsScalar,ConjLhs,RhsScalar,ConjRhs,RowMajor,Version>
       |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[ 64%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/gmxomp.cpp.o
-[ 64%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/gmxregex.cpp.o
-[ 64%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/train_utility.cpp.o
-[ 64%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/ikeyvaluetreeerror.cpp.o
-[ 64%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/velocityhandler.cpp.o
-[ 65%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/init.cpp.o
-[ 65%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/inmemoryserializer.cpp.o
-[ 67%] Building CXX object src/CMakeFiles/actLib.dir/external/quasirandom_sequences/sobol.cpp.o
-[ 67%] Building CXX object src/CMakeFiles/actLib.dir/external/stlbfgs/linesearch.cpp.o
-[ 67%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/int64_to_int.cpp.o
+[ 57%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/residuetypes.cpp.o
+[ 58%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/symtab.cpp.o
+[ 58%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/topology.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/train_ff.cpp.o
+[ 58%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/topology/topsort.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/train_utility.cpp.o
+[ 58%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/alignedallocator.cpp.o
+[ 60%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/basenetwork.cpp.o
+[ 60%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/baseversion.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/actLib.dir/act/alexandria/velocityhandler.cpp.o
+[ 60%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/binaryinformation.cpp.o
+In file included from /installs/ACT-0.97/src/gromacs/utility/binaryinformation.cpp:75:
+/installs/ACT-0.97/build/src/buildinfo.h:73: warning: "HWLOC_VERSION" redefined
+   73 | #define HWLOC_VERSION "2.5.0"
+      | 
+In file included from /usr/include/hwloc.h:56,
+                 from /installs/ACT-0.97/src/gromacs/utility/binaryinformation.cpp:63:
+/usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:15: note: this is the location of the previous definition
+   15 | #define HWLOC_VERSION "2.7.0"
+      | 
+[ 60%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/compare.cpp.o
+In file included from /installs/ACT-0.97/src/gromacs/utility/exceptions.h:63,
+                 from /installs/ACT-0.97/src/gromacs/utility/binaryinformation.cpp:78:
+/installs/ACT-0.97/src/gromacs/utility/binaryinformation.cpp: In function 'void {anonymous}::printCopyright(gmx::TextWriter*)':
+/installs/ACT-0.97/src/gromacs/utility/binaryinformation.cpp:171:65: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+  171 |             GMX_RELEASE_ASSERT(strlen(Contributors[i]) + offset < asize(buf),
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/installs/ACT-0.97/src/gromacs/utility/gmxassert.h:76:15: note: in definition of macro 'GMX_RELEASE_ASSERT'
+   76 |     ((void) ((condition) ? (void)0 :                               \
+      |               ^~~~~~~~~
 In file included from /usr/include/eigen3/Eigen/Core:337,
                  from /usr/include/eigen3/Eigen/Eigenvalues:11,
                  from /installs/ACT-0.97/src/act/alexandria/molhandler.cpp:40:
@@ -43123,9 +43101,29 @@ In file included from /usr/include/eigen3/Eigen/Core:337,
 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:41:6: note: by argument 4 of type 'const double*' to 'static void Eigen::internal::selfadjoint_matrix_vector_product<Scalar, Index, StorageOrder, UpLo, ConjugateLhs, ConjugateRhs, Version>::run(Index, const Scalar*, Index, const Scalar*, Scalar*, Scalar) [with Scalar = double; Index = long int; int StorageOrder = 0; int UpLo = 1; bool ConjugateLhs = false; bool ConjugateRhs = false; int Version = 0]' declared here
    41 | void selfadjoint_matrix_vector_product<Scalar,Index,StorageOrder,UpLo,ConjugateLhs,ConjugateRhs,Version>::run(
       |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[ 67%] Building CXX object src/CMakeFiles/actLib.dir/external/stlbfgs/stlbfgs.cpp.o
-[ 67%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/keyvaluetree.cpp.o
+[ 60%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/coolstuff.cpp.o
+[ 61%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/cstringutil.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/actLib.dir/external/quasirandom_sequences/sobol.cpp.o
+[ 62%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/datafilefinder.cpp.o
+[ 62%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/directoryenumerator.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/actLib.dir/external/stlbfgs/linesearch.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/actLib.dir/external/stlbfgs/stlbfgs.cpp.o
+[ 62%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/errorcodes.cpp.o
+[ 62%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/errorformat.cpp.o
+[ 64%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/exceptions.cpp.o
+[ 64%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/fatalerror.cpp.o
+[ 64%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/fileredirector.cpp.o
+[ 64%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/filestream.cpp.o
+[ 65%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/futil.cpp.o
+[ 65%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/gmxassert.cpp.o
+[ 65%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/gmxomp.cpp.o
+[ 65%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/gmxregex.cpp.o
+[ 65%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/ikeyvaluetreeerror.cpp.o
+[ 67%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/init.cpp.o
+[ 67%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/inmemoryserializer.cpp.o
+[ 67%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/int64_to_int.cpp.o
 [ 68%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/keyvaluetreeserializer.cpp.o
+[ 68%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/keyvaluetree.cpp.o
 [ 68%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/keyvaluetreetransform.cpp.o
 [ 68%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/logger.cpp.o
 [ 68%] Building CXX object src/gromacs/CMakeFiles/libactgromacs.dir/utility/loggerbuilder.cpp.o
@@ -43230,200 +43228,10 @@ In file included from /usr/include/eigen3/Eigen/Core:337,
 [ 98%] Building CXX object src/act/alexandria/CMakeFiles/alexandria.dir/alexandria.cpp.o
 [100%] Linking CXX executable ../../../bin/alexandria
 [100%] Built target alexandria
-+ make -j 8 tests
-[  0%] Building CXX object src/external/googletest/CMakeFiles/gmock.dir/googlemock/src/gmock-all.cc.o
-[  0%] Building CXX object src/external/googletest/CMakeFiles/gmock.dir/googletest/src/gtest-all.cc.o
-Consolidate compiler generated dependencies of target actLib
-Consolidate compiler generated dependencies of target libactgromacs
-[ 29%] Built target actLib
-[ 74%] Built target libactgromacs
-[ 75%] Linking CXX static library ../../../lib/libgmock.a
-[ 75%] Built target gmock
-[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/interactivetest.cpp.o
-[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/conftest.cpp.o
-[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/cmdlinetest.cpp.o
-[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/loggertest.cpp.o
-[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/filematchers.cpp.o
-[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/mpi-printer.cpp.o
-[ 77%] Building CXX object src/testutils/CMakeFiles/testutils.dir/mpitest.cpp.o
-[ 77%] Building CXX object src/testutils/CMakeFiles/testutils.dir/refdata.cpp.o
-[ 77%] Building CXX object src/testutils/CMakeFiles/testutils.dir/refdata-xml.cpp.o
-[ 77%] Building CXX object src/testutils/CMakeFiles/testutils.dir/stdiohelper.cpp.o
-[ 78%] Building CXX object src/testutils/CMakeFiles/testutils.dir/stringtest.cpp.o
-[ 78%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testasserts.cpp.o
-[ 78%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testfilemanager.cpp.o
-[ 78%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testfileredirector.cpp.o
-[ 78%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testinit.cpp.o
-[ 79%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testmatchers.cpp.o
-[ 79%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testoptions.cpp.o
-[ 79%] Building CXX object src/testutils/CMakeFiles/testutils.dir/textblockmatchers.cpp.o
-[ 79%] Building CXX object src/testutils/CMakeFiles/testutils.dir/xvgtest.cpp.o
-[ 79%] Building CXX object src/testutils/CMakeFiles/testutils.dir/__/external/tinyxml2/tinyxml2.cpp.o
-[ 80%] Linking CXX static library ../../lib/libtestutils.a
-[ 80%] Built target testutils
-[ 81%] Building CXX object src/testutils/tests/CMakeFiles/testutils-test.dir/interactivetest.cpp.o
-[ 81%] Building CXX object src/external/quasirandom_sequences/tests/CMakeFiles/sobol-test.dir/sobolTest.cpp.o
-[ 81%] Building CXX object src/gromacs/gmxlib/nonbonded/tests/CMakeFiles/wang-buckingham-test.dir/wbhTest.cpp.o
-[ 81%] Building CXX object src/gromacs/fileio/tests/CMakeFiles/fileio-test.dir/filemd5.cpp.o
-[ 81%] Building CXX object src/gromacs/listed-forces/tests/CMakeFiles/listed-forces-test.dir/bonded.cpp.o
-[ 81%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/alignedallocator.cpp.o
-[ 81%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-mpi-test.dir/physicalnodecommunicator-mpi.cpp.o
-[ 82%] Building CXX object src/gromacs/statistics/tests/CMakeFiles/statistics-test.dir/statisticsTest.cpp.o
-[ 82%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-mpi-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 82%] Building CXX object src/external/quasirandom_sequences/tests/CMakeFiles/sobol-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 82%] Building CXX object src/gromacs/statistics/tests/CMakeFiles/statistics-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 82%] Building CXX object src/gromacs/gmxlib/nonbonded/tests/CMakeFiles/wang-buckingham-test.dir/coulombTest.cpp.o
-[ 82%] Building CXX object src/gromacs/fileio/tests/CMakeFiles/fileio-test.dir/readinp.cpp.o
-[ 82%] Building CXX object src/gromacs/listed-forces/tests/CMakeFiles/listed-forces-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 82%] Building CXX object src/testutils/tests/CMakeFiles/testutils-test.dir/refdata_tests.cpp.o
-[ 83%] Linking CXX executable ../../../../bin/utility-mpi-test
-[ 83%] Linking CXX executable ../../../../bin/sobol-test
-[ 83%] Built target utility-mpi-test
-[ 83%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/allmolsTest.cpp.o
-[ 83%] Linking CXX executable ../../../../bin/statistics-test
-[ 83%] Built target sobol-test
-[ 83%] Building CXX object src/act/coulombintegrals/tests/CMakeFiles/coulombIntegrals-test.dir/coulombintegralstest.cpp.o
-[ 83%] Built target statistics-test
-[ 83%] Building CXX object src/act/forces/tests/CMakeFiles/act-forces-test.dir/combinationRuleTest.cpp.o
-[ 84%] Linking CXX executable ../../../../bin/listed-forces-test
-[ 84%] Building CXX object src/gromacs/gmxlib/nonbonded/tests/CMakeFiles/wang-buckingham-test.dir/__/__/__/__/testutils/unittest_main.cpp.o
-[ 84%] Built target listed-forces-test
-[ 84%] Building CXX object src/act/molprop/tests/CMakeFiles/molprop-test.dir/molpropTest.cpp.o
-[ 84%] Building CXX object src/gromacs/fileio/tests/CMakeFiles/fileio-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 86%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/atompropTest.cpp.o
-[ 86%] Linking CXX executable ../../../../../bin/wang-buckingham-test
-[ 87%] Linking CXX executable ../../../../bin/fileio-test
-[ 87%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/arrayref.cpp.o
-[ 87%] Built target fileio-test
-[ 87%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/basecontainerTest.cpp.o
-[ 87%] Built target wang-buckingham-test
-[ 87%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/bitmask32.cpp.o
-[ 87%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/datasetTest.cpp.o
-[ 87%] Building CXX object src/testutils/tests/CMakeFiles/testutils-test.dir/testasserts_tests.cpp.o
-[ 87%] Building CXX object src/act/coulombintegrals/tests/CMakeFiles/coulombIntegrals-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 87%] Building CXX object src/act/molprop/tests/CMakeFiles/molprop-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 87%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/identifierTest.cpp.o
-[ 87%] Building CXX object src/act/forces/tests/CMakeFiles/act-forces-test.dir/forcecomputerutilsTest.cpp.o
-[ 88%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/identifierMapTest.cpp.o
-[ 89%] Linking CXX executable ../../../../bin/coulombIntegrals-test
-[ 89%] Linking CXX executable ../../../../bin/molprop-test
-[ 89%] Built target coulombIntegrals-test
-[ 89%] Building CXX object src/act/forcefield/tests/CMakeFiles/forcefield-test.dir/checksum_test.cpp.o
-[ 89%] Built target molprop-test
-[ 89%] Building CXX object src/act/forces/tests/CMakeFiles/act-forces-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 90%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/bitmask64.cpp.o
-[ 91%] Building CXX object src/act/qgen/tests/CMakeFiles/qgen-test.dir/interactionEnergyTest.cpp.o
-[ 92%] Building CXX object src/testutils/tests/CMakeFiles/testutils-test.dir/xvgtest_tests.cpp.o
-[ 92%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/interactiontypeTest.cpp.o
-[ 92%] Linking CXX executable ../../../../bin/act-forces-test
-[ 92%] Building CXX object src/act/forcefield/tests/CMakeFiles/forcefield-test.dir/forcefield_parameter_test.cpp.o
-[ 92%] Built target act-forces-test
-[ 92%] Building CXX object src/act/forcefield/tests/CMakeFiles/forcefield-test.dir/forcefield_parameterlist_test.cpp.o
-[ 92%] Building CXX object src/testutils/tests/CMakeFiles/testutils-test.dir/__/unittest_main.cpp.o
-[ 92%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 92%] Building CXX object src/act/forcefield/tests/CMakeFiles/forcefield-test.dir/forcefield_test.cpp.o
-[ 92%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/bitmask128.cpp.o
-[ 92%] Linking CXX executable ../../../bin/testutils-test
-[ 92%] Built target testutils-test
-[ 93%] Building CXX object src/act/utility/tests/CMakeFiles/act-utility-test.dir/regressionTest.cpp.o
-[ 93%] Linking CXX executable ../../../../bin/basics-test
-[ 93%] Built target basics-test
-[ 93%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/actmol_util.cpp.o
-[ 93%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/atomtypeTest.cpp.o
-[ 93%] Building CXX object src/act/qgen/tests/CMakeFiles/qgen-test.dir/qgen_acmTest.cpp.o
-[ 94%] Building CXX object src/act/forcefield/tests/CMakeFiles/forcefield-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 94%] Building CXX object src/act/utility/tests/CMakeFiles/act-utility-test.dir/unitsTest.cpp.o
-[ 94%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/keyvaluetreeserializer.cpp.o
-[ 94%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/keyvaluetreetransform.cpp.o
-[ 94%] Linking CXX executable ../../../../bin/forcefield-test
-[ 94%] Building CXX object src/act/utility/tests/CMakeFiles/act-utility-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 94%] Built target forcefield-test
-[ 94%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/allbondedsTest.cpp.o
-[ 94%] Linking CXX executable ../../../../bin/act-utility-test
-[ 94%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/b2Test.cpp.o
-[ 94%] Built target act-utility-test
-[ 95%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/forcecomputerTest.cpp.o
-[ 95%] Building CXX object src/act/qgen/tests/CMakeFiles/qgen-test.dir/qgen_respTest.cpp.o
-[ 95%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/gmxregex.cpp.o
-[ 96%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/logger.cpp.o
-[ 96%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/molhandlerTest.cpp.o
-[ 96%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/openmmTest.cpp.o
-[ 96%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/path.cpp.o
-[ 96%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/physicalnodecommunicator.cpp.o
-[ 96%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/sphereIntegratorTest.cpp.o
-[ 96%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/stringutil.cpp.o
-[ 96%] Building CXX object src/act/qgen/tests/CMakeFiles/qgen-test.dir/qtypeTest.cpp.o
-[ 97%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/textreader.cpp.o
-[ 98%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/topologyTest.cpp.o
-[ 98%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/vsiteTest.cpp.o
-[ 98%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/textwriter.cpp.o
-[ 98%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/typetraits.cpp.o
-[ 98%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 98%] Building CXX object src/act/qgen/tests/CMakeFiles/qgen-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[ 98%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/__/__/__/testutils/unittest_main.cpp.o
-[100%] Linking CXX executable ../../../../bin/qgen-test
-[100%] Linking CXX executable ../../../../bin/alexandria-test
-[100%] Built target qgen-test
-[100%] Built target alexandria-test
-[100%] Linking CXX executable ../../../../bin/utility-test
-[100%] Built target utility-test
-[100%] Built target tests
-+ make test
-Running tests...
-Test project /installs/ACT-0.97/build
-      Start  1: TestUtilsUnitTests
- 1/16 Test  #1: TestUtilsUnitTests ...............   Passed    0.24 sec
-      Start  2: WangBuckinghamTests
- 2/16 Test  #2: WangBuckinghamTests ..............   Passed    0.22 sec
-      Start  3: ListedForcesTest
- 3/16 Test  #3: ListedForcesTest .................   Passed    0.23 sec
-      Start  4: UtilityUnitTests
- 4/16 Test  #4: UtilityUnitTests .................   Passed    0.23 sec
-      Start  5: UtilityMpiUnitTests
- 5/16 Test  #5: UtilityMpiUnitTests ..............   Passed    0.31 sec
-      Start  6: FileIOTests
- 6/16 Test  #6: FileIOTests ......................   Passed    0.23 sec
-      Start  7: StatisticsTests
- 7/16 Test  #7: StatisticsTests ..................   Passed    0.23 sec
-      Start  8: BasicTests
- 8/16 Test  #8: BasicTests .......................***Failed    0.23 sec
-      Start  9: CoulombIntegralsTest
- 9/16 Test  #9: CoulombIntegralsTest .............   Passed    0.23 sec
-      Start 10: ACTForcesTests
-10/16 Test #10: ACTForcesTests ...................   Passed    0.31 sec
-      Start 11: MolpropTests
-11/16 Test #11: MolpropTests .....................   Passed    0.37 sec
-      Start 12: ForceFieldTests
-12/16 Test #12: ForceFieldTests ..................   Passed    0.46 sec
-      Start 13: QgenTests
-13/16 Test #13: QgenTests ........................***Failed    0.41 sec
-      Start 14: ACTUtilityTests
-14/16 Test #14: ACTUtilityTests ..................   Passed    0.23 sec
-      Start 15: AlexandriaTests
-15/16 Test #15: AlexandriaTests ..................***Failed    0.36 sec
-      Start 16: SobolTests
-16/16 Test #16: SobolTests .......................   Passed    0.23 sec
-
-81% tests passed, 3 tests failed out of 16
-
-Label Time Summary:
-GTest       =   4.52 sec*proc (16 tests)
-MpiTest     =   0.31 sec*proc (1 test)
-UnitTest    =   4.52 sec*proc (16 tests)
-
-Total Test time (real) =   4.53 sec
-
-The following tests FAILED:
-	  8 - BasicTests (Failed)
-	 13 - QgenTests (Failed)
-	 15 - AlexandriaTests (Failed)
-Errors while running CTest
-Output from these tests are in: /installs/ACT-0.97/build/Testing/Temporary/LastTest.log
-Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
-make: *** [Makefile:91: test] Error 8
-+ true
 + make install
+Consolidate compiler generated dependencies of target actLib
 [ 38%] Built target actLib
+Consolidate compiler generated dependencies of target libactgromacs
 [ 98%] Built target libactgromacs
 Consolidate compiler generated dependencies of target alexandria
 [100%] Built target alexandria
@@ -43483,6 +43291,252 @@ Install the project...
 -- Installing: /usr/local/gromacs/bin/view_fitness
 -- Installing: /usr/local/gromacs/bin/donchev2molprop
 -- Installing: /usr/local/gromacs/bin/ncia2molprop
++ export OMPI_ALLOW_RUN_AS_ROOT=1
++ export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
++ . /usr/local/gromacs/bin/ACTRC
++ echo
++ grep -q csh
++ . /usr/local/gromacs/bin/ACTRC.bash
++ test -n 
++ old_IFS= 	
+
++ IFS=:
++ tmppath=
++ PKG_CONFIG_PATH=
++ tmppath=
++ test /usr/local/sbin != 
++ tmppath=/usr/local/sbin
++ test /usr/local/bin != 
++ tmppath=/usr/local/sbin:/usr/local/bin
++ test /usr/sbin != 
++ tmppath=/usr/local/sbin:/usr/local/bin:/usr/sbin
++ test /usr/bin != 
++ tmppath=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
++ test /sbin != 
++ tmppath=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
++ test /bin != 
++ tmppath=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ tmppath=
++ MANPATH=
++ ACTPREFIX=/usr/local/gromacs
++ ACTBIN=/usr/local/gromacs/bin
++ ACTLDLIB=/usr/local/gromacs/lib
++ ACTMAN=/usr/local/gromacs/share/man
++ ACTDATA=/usr/local/gromacs/share/act
++ ACTLIB=/usr/local/gromacs/lib
++ ALLDIR=/usr/local/gromacs/lib/openbabel
++ [[ -d /usr/local/gromacs/lib/openbabel ]]
+/.post.script: 63: /usr/local/gromacs/bin/ACTRC.bash: [[: not found
++ [[ -z  ]]
+/.post.script: 66: /usr/local/gromacs/bin/ACTRC.bash: [[: not found
++ ALLDIR=
++ PKG_CONFIG_PATH=/usr/local/gromacs/lib/pkgconfig
++ PATH=/usr/local/gromacs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ PYTHONADD=/usr/local/gromacs/lib/python./site-packages/act
++ OBLIB=/usr/local/gromacs/lib/python./site-packages/openbabel
++ [[ ! -z /usr/local/gromacs/lib/python./site-packages/openbabel ]]
+/.post.script: 81: /usr/local/gromacs/bin/ACTRC.bash: [[: not found
++ [[ -z  ]]
+/.post.script: 84: /usr/local/gromacs/bin/ACTRC.bash: [[: not found
++ PYTHONPATH=:/usr/local/gromacs/lib/python./site-packages/act
++ MANPATH=/usr/local/gromacs/share/man:
++ export ACTBIN ACTLDLIB ACTMAN ACTDATA
++ export PKG_CONFIG_PATH BABEL_LIBDIR PYTHONPATH
++ IFS= 	
+
++ unset old_IFS
++ test -n 
++ test -n 
++ return
++ make -j 8 tests
+[  0%] Building CXX object src/external/googletest/CMakeFiles/gmock.dir/googlemock/src/gmock-all.cc.o
+[  0%] Building CXX object src/external/googletest/CMakeFiles/gmock.dir/googletest/src/gtest-all.cc.o
+[ 29%] Built target actLib
+[ 74%] Built target libactgromacs
+[ 75%] Linking CXX static library ../../../lib/libgmock.a
+[ 75%] Built target gmock
+[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/filematchers.cpp.o
+[ 75%] Building CXX object src/testutils/CMakeFiles/testutils.dir/cmdlinetest.cpp.o
+[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/interactivetest.cpp.o
+[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/conftest.cpp.o
+[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/loggertest.cpp.o
+[ 76%] Building CXX object src/testutils/CMakeFiles/testutils.dir/mpi-printer.cpp.o
+[ 77%] Building CXX object src/testutils/CMakeFiles/testutils.dir/mpitest.cpp.o
+[ 77%] Building CXX object src/testutils/CMakeFiles/testutils.dir/refdata.cpp.o
+[ 77%] Building CXX object src/testutils/CMakeFiles/testutils.dir/refdata-xml.cpp.o
+[ 77%] Building CXX object src/testutils/CMakeFiles/testutils.dir/stdiohelper.cpp.o
+[ 78%] Building CXX object src/testutils/CMakeFiles/testutils.dir/stringtest.cpp.o
+[ 78%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testasserts.cpp.o
+[ 78%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testfilemanager.cpp.o
+[ 78%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testfileredirector.cpp.o
+[ 78%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testinit.cpp.o
+[ 79%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testmatchers.cpp.o
+[ 79%] Building CXX object src/testutils/CMakeFiles/testutils.dir/testoptions.cpp.o
+[ 79%] Building CXX object src/testutils/CMakeFiles/testutils.dir/textblockmatchers.cpp.o
+[ 79%] Building CXX object src/testutils/CMakeFiles/testutils.dir/xvgtest.cpp.o
+[ 79%] Building CXX object src/testutils/CMakeFiles/testutils.dir/__/external/tinyxml2/tinyxml2.cpp.o
+[ 80%] Linking CXX static library ../../lib/libtestutils.a
+[ 80%] Built target testutils
+[ 80%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/alignedallocator.cpp.o
+[ 80%] Building CXX object src/external/quasirandom_sequences/tests/CMakeFiles/sobol-test.dir/sobolTest.cpp.o
+[ 80%] Building CXX object src/gromacs/listed-forces/tests/CMakeFiles/listed-forces-test.dir/bonded.cpp.o
+[ 80%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-mpi-test.dir/physicalnodecommunicator-mpi.cpp.o
+[ 80%] Building CXX object src/testutils/tests/CMakeFiles/testutils-test.dir/interactivetest.cpp.o
+[ 81%] Building CXX object src/gromacs/fileio/tests/CMakeFiles/fileio-test.dir/filemd5.cpp.o
+[ 82%] Building CXX object src/gromacs/statistics/tests/CMakeFiles/statistics-test.dir/statisticsTest.cpp.o
+[ 82%] Building CXX object src/gromacs/gmxlib/nonbonded/tests/CMakeFiles/wang-buckingham-test.dir/wbhTest.cpp.o
+[ 82%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-mpi-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 82%] Building CXX object src/external/quasirandom_sequences/tests/CMakeFiles/sobol-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 82%] Building CXX object src/gromacs/statistics/tests/CMakeFiles/statistics-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 82%] Building CXX object src/gromacs/gmxlib/nonbonded/tests/CMakeFiles/wang-buckingham-test.dir/coulombTest.cpp.o
+[ 82%] Building CXX object src/gromacs/fileio/tests/CMakeFiles/fileio-test.dir/readinp.cpp.o
+[ 82%] Building CXX object src/gromacs/listed-forces/tests/CMakeFiles/listed-forces-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 82%] Building CXX object src/testutils/tests/CMakeFiles/testutils-test.dir/refdata_tests.cpp.o
+[ 83%] Linking CXX executable ../../../../bin/utility-mpi-test
+[ 83%] Linking CXX executable ../../../../bin/sobol-test
+[ 83%] Built target utility-mpi-test
+[ 83%] Building CXX object src/testutils/tests/CMakeFiles/testutils-test.dir/testasserts_tests.cpp.o
+[ 83%] Linking CXX executable ../../../../bin/statistics-test
+[ 83%] Built target sobol-test
+[ 84%] Building CXX object src/testutils/tests/CMakeFiles/testutils-test.dir/xvgtest_tests.cpp.o
+[ 84%] Built target statistics-test
+[ 84%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/allmolsTest.cpp.o
+[ 86%] Linking CXX executable ../../../../bin/listed-forces-test
+[ 86%] Built target listed-forces-test
+[ 86%] Building CXX object src/gromacs/gmxlib/nonbonded/tests/CMakeFiles/wang-buckingham-test.dir/__/__/__/__/testutils/unittest_main.cpp.o
+[ 86%] Building CXX object src/act/coulombintegrals/tests/CMakeFiles/coulombIntegrals-test.dir/coulombintegralstest.cpp.o
+[ 86%] Building CXX object src/gromacs/fileio/tests/CMakeFiles/fileio-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 86%] Building CXX object src/testutils/tests/CMakeFiles/testutils-test.dir/__/unittest_main.cpp.o
+[ 87%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/atompropTest.cpp.o
+[ 87%] Linking CXX executable ../../../../../bin/wang-buckingham-test
+[ 87%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/arrayref.cpp.o
+[ 88%] Linking CXX executable ../../../../bin/fileio-test
+[ 88%] Built target wang-buckingham-test
+[ 88%] Building CXX object src/act/forces/tests/CMakeFiles/act-forces-test.dir/combinationRuleTest.cpp.o
+[ 88%] Building CXX object src/act/forces/tests/CMakeFiles/act-forces-test.dir/forcecomputerutilsTest.cpp.o
+[ 88%] Built target fileio-test
+[ 88%] Building CXX object src/act/molprop/tests/CMakeFiles/molprop-test.dir/molpropTest.cpp.o
+[ 88%] Building CXX object src/act/molprop/tests/CMakeFiles/molprop-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 88%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/basecontainerTest.cpp.o
+[ 88%] Linking CXX executable ../../../bin/testutils-test
+[ 88%] Built target testutils-test
+[ 88%] Building CXX object src/act/forcefield/tests/CMakeFiles/forcefield-test.dir/checksum_test.cpp.o
+[ 89%] Building CXX object src/act/qgen/tests/CMakeFiles/qgen-test.dir/interactionEnergyTest.cpp.o
+[ 89%] Building CXX object src/act/qgen/tests/CMakeFiles/qgen-test.dir/qgen_acmTest.cpp.o
+[ 89%] Building CXX object src/act/coulombintegrals/tests/CMakeFiles/coulombIntegrals-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 89%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/datasetTest.cpp.o
+[ 90%] Linking CXX executable ../../../../bin/coulombIntegrals-test
+[ 90%] Linking CXX executable ../../../../bin/molprop-test
+[ 90%] Built target coulombIntegrals-test
+[ 90%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/identifierTest.cpp.o
+[ 90%] Building CXX object src/act/forcefield/tests/CMakeFiles/forcefield-test.dir/forcefield_parameter_test.cpp.o
+[ 90%] Built target molprop-test
+[ 91%] Building CXX object src/act/utility/tests/CMakeFiles/act-utility-test.dir/regressionTest.cpp.o
+[ 91%] Building CXX object src/act/forces/tests/CMakeFiles/act-forces-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 92%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/identifierMapTest.cpp.o
+[ 92%] Linking CXX executable ../../../../bin/act-forces-test
+[ 92%] Built target act-forces-test
+[ 92%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/actmol_util.cpp.o
+[ 92%] Building CXX object src/act/utility/tests/CMakeFiles/act-utility-test.dir/unitsTest.cpp.o
+[ 92%] Building CXX object src/act/utility/tests/CMakeFiles/act-utility-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 92%] Building CXX object src/act/forcefield/tests/CMakeFiles/forcefield-test.dir/forcefield_parameterlist_test.cpp.o
+[ 92%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/interactiontypeTest.cpp.o
+[ 92%] Building CXX object src/act/qgen/tests/CMakeFiles/qgen-test.dir/qgen_respTest.cpp.o
+[ 92%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/atomtypeTest.cpp.o
+[ 92%] Linking CXX executable ../../../../bin/act-utility-test
+[ 92%] Built target act-utility-test
+[ 92%] Building CXX object src/act/basics/tests/CMakeFiles/basics-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 92%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/allbondedsTest.cpp.o
+[ 92%] Building CXX object src/act/forcefield/tests/CMakeFiles/forcefield-test.dir/forcefield_test.cpp.o
+[ 92%] Linking CXX executable ../../../../bin/basics-test
+[ 92%] Built target basics-test
+[ 92%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/bitmask32.cpp.o
+[ 93%] Building CXX object src/act/forcefield/tests/CMakeFiles/forcefield-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 93%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/b2Test.cpp.o
+[ 94%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/forcecomputerTest.cpp.o
+[ 94%] Building CXX object src/act/qgen/tests/CMakeFiles/qgen-test.dir/qtypeTest.cpp.o
+[ 94%] Building CXX object src/act/qgen/tests/CMakeFiles/qgen-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[ 94%] Linking CXX executable ../../../../bin/forcefield-test
+[ 95%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/bitmask64.cpp.o
+[ 95%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/bitmask128.cpp.o
+[ 95%] Built target forcefield-test
+[ 95%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/molhandlerTest.cpp.o
+[ 95%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/openmmTest.cpp.o
+[ 95%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/sphereIntegratorTest.cpp.o
+[ 96%] Linking CXX executable ../../../../bin/qgen-test
+[ 96%] Built target qgen-test
+[ 96%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/keyvaluetreeserializer.cpp.o
+[ 96%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/keyvaluetreetransform.cpp.o
+[ 97%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/topologyTest.cpp.o
+[ 97%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/gmxregex.cpp.o
+[ 97%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/vsiteTest.cpp.o
+[ 98%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/logger.cpp.o
+[ 98%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/path.cpp.o
+[ 98%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/physicalnodecommunicator.cpp.o
+[ 98%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/stringutil.cpp.o
+[100%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/textreader.cpp.o
+[100%] Building CXX object src/act/alexandria/tests/CMakeFiles/alexandria-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[100%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/textwriter.cpp.o
+[100%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/typetraits.cpp.o
+[100%] Building CXX object src/gromacs/utility/tests/CMakeFiles/utility-test.dir/__/__/__/testutils/unittest_main.cpp.o
+[100%] Linking CXX executable ../../../../bin/alexandria-test
+[100%] Built target alexandria-test
+[100%] Linking CXX executable ../../../../bin/utility-test
+[100%] Built target utility-test
+[100%] Built target tests
++ make test
+Running tests...
+Test project /installs/ACT-0.97/build
+      Start  1: TestUtilsUnitTests
+ 1/16 Test  #1: TestUtilsUnitTests ...............   Passed    0.23 sec
+      Start  2: WangBuckinghamTests
+ 2/16 Test  #2: WangBuckinghamTests ..............   Passed    0.24 sec
+      Start  3: ListedForcesTest
+ 3/16 Test  #3: ListedForcesTest .................   Passed    0.23 sec
+      Start  4: UtilityUnitTests
+ 4/16 Test  #4: UtilityUnitTests .................   Passed    0.25 sec
+      Start  5: UtilityMpiUnitTests
+ 5/16 Test  #5: UtilityMpiUnitTests ..............   Passed    0.30 sec
+      Start  6: FileIOTests
+ 6/16 Test  #6: FileIOTests ......................   Passed    0.22 sec
+      Start  7: StatisticsTests
+ 7/16 Test  #7: StatisticsTests ..................   Passed    0.22 sec
+      Start  8: BasicTests
+ 8/16 Test  #8: BasicTests .......................   Passed    0.25 sec
+      Start  9: CoulombIntegralsTest
+ 9/16 Test  #9: CoulombIntegralsTest .............   Passed    0.23 sec
+      Start 10: ACTForcesTests
+10/16 Test #10: ACTForcesTests ...................   Passed    0.29 sec
+      Start 11: MolpropTests
+11/16 Test #11: MolpropTests .....................   Passed    0.33 sec
+      Start 12: ForceFieldTests
+12/16 Test #12: ForceFieldTests ..................   Passed    0.46 sec
+      Start 13: QgenTests
+13/16 Test #13: QgenTests ........................   Passed    2.20 sec
+      Start 14: ACTUtilityTests
+14/16 Test #14: ACTUtilityTests ..................   Passed    0.22 sec
+      Start 15: AlexandriaTests
+15/16 Test #15: AlexandriaTests ..................***Failed    4.06 sec
+      Start 16: SobolTests
+16/16 Test #16: SobolTests .......................   Passed    0.22 sec
+
+94% tests passed, 1 tests failed out of 16
+
+Label Time Summary:
+GTest       =   9.96 sec*proc (16 tests)
+MpiTest     =   0.30 sec*proc (1 test)
+UnitTest    =   9.96 sec*proc (16 tests)
+
+Total Test time (real) =   9.96 sec
+
+The following tests FAILED:
+	 15 - AlexandriaTests (Failed)
+Errors while running CTest
+Output from these tests are in: /installs/ACT-0.97/build/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+make: *** [Makefile:91: test] Error 8
++ true
 INFO:    Adding environment to container
 INFO:    Adding runscript
 INFO:    Creating SIF file...
