@@ -23,7 +23,7 @@ From: ubuntu:22.04
 
   # openbabel-alexandria
   export TMPD=/tmp/downloads &&   mkdir -p $TMPD
-  #wget -P $TMPD -c https://github.com/dspoel/openbabel/archive/refs/tags/openbabel-alexandria-0.9.tar.gz
+  wget -P $TMPD -c https://github.com/dspoel/openbabel/archive/refs/tags/openbabel-alexandria-0.9.tar.gz
   mkdir -p /installs && cd /installs
   tar xzvf $TMPD/openbabel-alexandria-0.9.tar.gz
   cd openbabel-openbabel-alexandria-0.9
