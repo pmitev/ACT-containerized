@@ -4,4 +4,4 @@ tasks:
       sudo apt-get update && sudo apt-get install -y mc dos2unix
       wget -P /tmp/  https://github.com/apptainer/apptainer/releases/download/v1.2.5/apptainer_1.2.5_amd64.deb && sudo apt install -y /tmp/apptainer_1.2.5_amd64.deb
     command: | 
-      apptainer build alexandria.sif alexandria.def |& tee build.txt
+      sudo apptainer build alexandria.sif alexandria.def |& tee build.txt
