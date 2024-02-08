@@ -40,6 +40,7 @@ From: ubuntu:22.04
   cmake -DGMX_DOUBLE=ON -DCMAKE_C_COMPILER=/usr/bin/mpicc.openmpi -DCMAKE_CXX_COMPILER=/usr/bin/mpicxx.openmpi -DGMX_EXTERNAL_BLAS=OFF -DGMX_EXTERNAL_LAPACK=OFF -DGMX_X11=OFF -DBUILD_SHARED_LIBS=OFF -DGMX_OPENMP=OFF -DGMX_MPI=ON  -DCMAKE_BUILD_TYPE=Release -DGMX_BUILD_MANUAL=OFF -DGMX_COMPACT_DOXYGEN=OFF -DREGRESSIONTEST_DOWNLOAD=OFF -DGMX_DEFAULT_SUFFIX=OFF ..
 
   make -j 8 && make install
+  cp /usr/local/gromacs/bin/ACTRC.bash /.singularity.d/env/99-ACTRC.sh
   
 # Running test as root
   export OMPI_ALLOW_RUN_AS_ROOT=1
