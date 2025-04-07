@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: ubuntu:22.04
+From: ubuntu:24.04
 
 %files
   ACT-0.97.tar.xz /
@@ -14,7 +14,7 @@ From: ubuntu:22.04
   export DEBIAN_FRONTEND=noninteractive
 
   # Package cache in /tmp
-  mkdir -p /tmp/apt22 &&  echo "Dir::Cache "/tmp/apt22";" > /etc/apt/apt.conf.d/singularity-cache.conf
+  mkdir -p /tmp/apt24 &&  echo "Dir::Cache "/tmp/apt24";" > /etc/apt/apt.conf.d/singularity-cache.conf
 
   apt-get update && apt-get -y dist-upgrade && \
   apt-get install -y build-essential cmake git wget \
@@ -22,31 +22,31 @@ From: ubuntu:22.04
 
 
   # openbabel-alexandria
-  export TMPD=/tmp/downloads &&   mkdir -p $TMPD
-  wget -P $TMPD -c https://github.com/dspoel/openbabel/archive/refs/tags/openbabel-alexandria-0.9.tar.gz
   mkdir -p /installs && cd /installs
-  tar xzvf $TMPD/openbabel-alexandria-0.9.tar.gz
-  cd openbabel-openbabel-alexandria-0.9
+  git clone https://github.com/dspoel/openbabel.git && cd openbabel && git checkout alexandria
   mkdir build && cd build
   cmake -DBUILD_SHARED=ON -DBUILD_GUI=OFF -DCMAKE_PREFIX_PATH=/installs/openbabel-openbabel-alexandria-0.9/tools -DRUN_SWIG=OFF -DPYTHON_BINDINGS=OFF -DOPTIMIZE_NATIVE=OFF -DWITH_COORDGEN=OFF  -DWITH_MAEPARSER=OFF -DCMAKE_CXX_COMPILER=mpicxx.openmpi -DCMAKE_C_COMPILER=mpicc.openmpi -DCMAKE_BUILD_TYPE=Release ..
   make -j 8 install
 
   # ACT
-  cd /installs
-  mv /ACT-0.97.tar.xz .
-  tar xvf ACT-0.97.tar.xz 
-  cd ACT-0.97
+  cd /installs &&  git clone https://github.com/AlexandriaChemistry/ACT.git && cd ACT
   mkdir build && cd build
   cmake -DGMX_DOUBLE=ON -DCMAKE_C_COMPILER=/usr/bin/mpicc.openmpi -DCMAKE_CXX_COMPILER=/usr/bin/mpicxx.openmpi -DGMX_EXTERNAL_BLAS=OFF -DGMX_EXTERNAL_LAPACK=OFF -DGMX_X11=OFF -DBUILD_SHARED_LIBS=OFF -DGMX_OPENMP=OFF -DGMX_MPI=ON  -DCMAKE_BUILD_TYPE=Release -DGMX_BUILD_MANUAL=OFF -DGMX_COMPACT_DOXYGEN=OFF -DREGRESSIONTEST_DOWNLOAD=OFF -DGMX_DEFAULT_SUFFIX=OFF ..
 
   make -j 8 && make install
-  cp /usr/local/gromacs/bin/ACTRC.bash /.singularity.d/env/99-ACTRC.sh
+  cp /usr/local/ACT/bin/ACTRC.bash /.singularity.d/env/99-ACTRC.sh
   
 # Running test as root
   export OMPI_ALLOW_RUN_AS_ROOT=1
   export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
-  . /usr/local/gromacs/bin/ACTRC
-  make -j 8 tests && make test || true
+  . /usr/local/ACT/bin/ACTRC
+  make -j 8 tests # && make test || true
+# Make tests
+/bin/bash << EOF
+  for itest in \$(echo bin/*test); do 
+   ./\${itest}
+  done
+EOF
 
 
 %runscript
